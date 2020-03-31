@@ -1,0 +1,954 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03CE9326242F8CB60025A1EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CE9325242F8CB60025A1EB /* AppDelegate.swift */; };
+		03CE9328242F8CB60025A1EB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CE9327242F8CB60025A1EB /* SceneDelegate.swift */; };
+		03CE932A242F8CB60025A1EB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CE9329242F8CB60025A1EB /* ContentView.swift */; };
+		03CE932C242F8CB70025A1EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03CE932B242F8CB70025A1EB /* Assets.xcassets */; };
+		03CE932F242F8CB70025A1EB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03CE932E242F8CB70025A1EB /* Preview Assets.xcassets */; };
+		03CE9332242F8CB70025A1EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03CE9330242F8CB70025A1EB /* LaunchScreen.storyboard */; };
+		03CE9343242F99650025A1EB /* LitterBoxUserUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CE9342242F99650025A1EB /* LitterBoxUserUITests.swift */; };
+		03CE934B242F9A500025A1EB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 03CE934A242F9A500025A1EB /* GoogleService-Info.plist */; };
+		03CE9353242F9BC00025A1EB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CE9352242F9BC00025A1EB /* User.swift */; };
+		03CE9356242F9C3F0025A1EB /* CatDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CE9355242F9C3F0025A1EB /* CatDetailView.swift */; };
+		03CE9358242F9C850025A1EB /* NewCatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CE9357242F9C850025A1EB /* NewCatView.swift */; };
+		03CE935A242F9CAB0025A1EB /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CE9359242F9CAB0025A1EB /* SignUp.swift */; };
+		03CE935C242F9CC80025A1EB /* LogIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CE935B242F9CC80025A1EB /* LogIn.swift */; };
+		03CE935E242F9CE10025A1EB /* CatRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CE935D242F9CE10025A1EB /* CatRowView.swift */; };
+		03CE9360242F9D1E0025A1EB /* LitterTripsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CE935F242F9D1E0025A1EB /* LitterTripsView.swift */; };
+		03CE9362242F9D420025A1EB /* LitterTripDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CE9361242F9D420025A1EB /* LitterTripDetailView.swift */; };
+		03CE9364242F9D6E0025A1EB /* FirebaseImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CE9363242F9D6E0025A1EB /* FirebaseImageView.swift */; };
+		03CE9367242F9D9A0025A1EB /* CustomInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CE9366242F9D9A0025A1EB /* CustomInput.swift */; };
+		03CE9369242F9DB70025A1EB /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CE9368242F9DB70025A1EB /* CustomButton.swift */; };
+		03CE936C242F9DEE0025A1EB /* ImagePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CE936B242F9DEE0025A1EB /* ImagePickerController.swift */; };
+		03CE936F242F9E1B0025A1EB /* FirebaseSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CE936E242F9E1B0025A1EB /* FirebaseSession.swift */; };
+		03CE9371242F9E320025A1EB /* Cat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CE9370242F9E320025A1EB /* Cat.swift */; };
+		03CE9373242F9E4D0025A1EB /* LitterTrip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CE9372242F9E4D0025A1EB /* LitterTrip.swift */; };
+		03CE9385243222EB0025A1EB /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CE9384243222EB0025A1EB /* SnapshotHelper.swift */; };
+		03CE938724322CA90025A1EB /* Just Testing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CE938624322CA90025A1EB /* Just Testing.swift */; };
+		03CE93C524325B8E0025A1EB /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 03CE938B24325B8E0025A1EB /* README.txt */; };
+		03CE93C624325B8E0025A1EB /* iPhone 11 Pro-01Cats.png in Resources */ = {isa = PBXBuildFile; fileRef = 03CE938D24325B8E0025A1EB /* iPhone 11 Pro-01Cats.png */; };
+		03CE93C724325B8E0025A1EB /* iPhone 11 Pro-03LitterTrips.png in Resources */ = {isa = PBXBuildFile; fileRef = 03CE938E24325B8E0025A1EB /* iPhone 11 Pro-03LitterTrips.png */; };
+		03CE93C824325B8E0025A1EB /* iPhone 11 Pro-04LitterTripDetail.png in Resources */ = {isa = PBXBuildFile; fileRef = 03CE938F24325B8E0025A1EB /* iPhone 11 Pro-04LitterTripDetail.png */; };
+		03CE93C924325B8E0025A1EB /* iPhone 11 Pro-02CatDetail.png in Resources */ = {isa = PBXBuildFile; fileRef = 03CE939024325B8E0025A1EB /* iPhone 11 Pro-02CatDetail.png */; };
+		03CE93CA24325B8E0025A1EB /* screenshots.html in Resources */ = {isa = PBXBuildFile; fileRef = 03CE939124325B8E0025A1EB /* screenshots.html */; };
+		03CE93CB24325B8E0025A1EB /* Pluginfile in Resources */ = {isa = PBXBuildFile; fileRef = 03CE939224325B8E0025A1EB /* Pluginfile */; };
+		03CE93CC24325B8E0025A1EB /* Appfile in Resources */ = {isa = PBXBuildFile; fileRef = 03CE939324325B8E0025A1EB /* Appfile */; };
+		03CE93CD24325B8E0025A1EB /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CE939424325B8E0025A1EB /* SnapshotHelper.swift */; };
+		03CE93CE24325B8E0025A1EB /* Deliverfile in Resources */ = {isa = PBXBuildFile; fileRef = 03CE939524325B8E0025A1EB /* Deliverfile */; };
+		03CE93CF24325B8E0025A1EB /* Fastfile in Resources */ = {isa = PBXBuildFile; fileRef = 03CE939624325B8E0025A1EB /* Fastfile */; };
+		03CE93D024325B8E0025A1EB /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 03CE939724325B8E0025A1EB /* README.md */; };
+		03CE93D124325B8E0025A1EB /* Matchfile in Resources */ = {isa = PBXBuildFile; fileRef = 03CE939824325B8E0025A1EB /* Matchfile */; };
+		03CE93D224325B8E0025A1EB /* copyright.txt in Resources */ = {isa = PBXBuildFile; fileRef = 03CE939A24325B8E0025A1EB /* copyright.txt */; };
+		03CE93D324325B8E0025A1EB /* phone_number.txt in Resources */ = {isa = PBXBuildFile; fileRef = 03CE939C24325B8E0025A1EB /* phone_number.txt */; };
+		03CE93D424325B8E0025A1EB /* address_line1.txt in Resources */ = {isa = PBXBuildFile; fileRef = 03CE939D24325B8E0025A1EB /* address_line1.txt */; };
+		03CE93D524325B8E0025A1EB /* country.txt in Resources */ = {isa = PBXBuildFile; fileRef = 03CE939E24325B8E0025A1EB /* country.txt */; };
+		03CE93D624325B8E0025A1EB /* city_name.txt in Resources */ = {isa = PBXBuildFile; fileRef = 03CE939F24325B8E0025A1EB /* city_name.txt */; };
+		03CE93D724325B8E0025A1EB /* address_line3.txt in Resources */ = {isa = PBXBuildFile; fileRef = 03CE93A024325B8E0025A1EB /* address_line3.txt */; };
+		03CE93D824325B8E0025A1EB /* address_line2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 03CE93A124325B8E0025A1EB /* address_line2.txt */; };
+		03CE93D924325B8F0025A1EB /* trade_name.txt in Resources */ = {isa = PBXBuildFile; fileRef = 03CE93A224325B8E0025A1EB /* trade_name.txt */; };
+		03CE93DA24325B8F0025A1EB /* email_address.txt in Resources */ = {isa = PBXBuildFile; fileRef = 03CE93A324325B8E0025A1EB /* email_address.txt */; };
+		03CE93DB24325B8F0025A1EB /* is_displayed_on_app_store.txt in Resources */ = {isa = PBXBuildFile; fileRef = 03CE93A424325B8E0025A1EB /* is_displayed_on_app_store.txt */; };
+		03CE93DC24325B8F0025A1EB /* last_name.txt in Resources */ = {isa = PBXBuildFile; fileRef = 03CE93A524325B8E0025A1EB /* last_name.txt */; };
+		03CE93DD24325B8F0025A1EB /* postal_code.txt in Resources */ = {isa = PBXBuildFile; fileRef = 03CE93A624325B8E0025A1EB /* postal_code.txt */; };
+		03CE93DE24325B8F0025A1EB /* first_name.txt in Resources */ = {isa = PBXBuildFile; fileRef = 03CE93A724325B8E0025A1EB /* first_name.txt */; };
+		03CE93DF24325B8F0025A1EB /* state.txt in Resources */ = {isa = PBXBuildFile; fileRef = 03CE93A824325B8E0025A1EB /* state.txt */; };
+		03CE93E024325B8F0025A1EB /* app_store_rating_config.json in Resources */ = {isa = PBXBuildFile; fileRef = 03CE93A924325B8E0025A1EB /* app_store_rating_config.json */; };
+		03CE93E124325B8F0025A1EB /* secondary_first_sub_category.txt in Resources */ = {isa = PBXBuildFile; fileRef = 03CE93AA24325B8E0025A1EB /* secondary_first_sub_category.txt */; };
+		03CE93E224325B8F0025A1EB /* secondary_category.txt in Resources */ = {isa = PBXBuildFile; fileRef = 03CE93AB24325B8E0025A1EB /* secondary_category.txt */; };
+		03CE93E324325B8F0025A1EB /* secondary_second_sub_category.txt in Resources */ = {isa = PBXBuildFile; fileRef = 03CE93AC24325B8E0025A1EB /* secondary_second_sub_category.txt */; };
+		03CE93E424325B8F0025A1EB /* primary_second_sub_category.txt in Resources */ = {isa = PBXBuildFile; fileRef = 03CE93AD24325B8E0025A1EB /* primary_second_sub_category.txt */; };
+		03CE93E524325B8F0025A1EB /* phone_number.txt in Resources */ = {isa = PBXBuildFile; fileRef = 03CE93AF24325B8E0025A1EB /* phone_number.txt */; };
+		03CE93E624325B8F0025A1EB /* demo_user.txt in Resources */ = {isa = PBXBuildFile; fileRef = 03CE93B024325B8E0025A1EB /* demo_user.txt */; };
+		03CE93E724325B8F0025A1EB /* notes.txt in Resources */ = {isa = PBXBuildFile; fileRef = 03CE93B124325B8E0025A1EB /* notes.txt */; };
+		03CE93E824325B8F0025A1EB /* email_address.txt in Resources */ = {isa = PBXBuildFile; fileRef = 03CE93B224325B8E0025A1EB /* email_address.txt */; };
+		03CE93E924325B8F0025A1EB /* last_name.txt in Resources */ = {isa = PBXBuildFile; fileRef = 03CE93B324325B8E0025A1EB /* last_name.txt */; };
+		03CE93EA24325B8F0025A1EB /* first_name.txt in Resources */ = {isa = PBXBuildFile; fileRef = 03CE93B424325B8E0025A1EB /* first_name.txt */; };
+		03CE93EB24325B8F0025A1EB /* demo_password.txt in Resources */ = {isa = PBXBuildFile; fileRef = 03CE93B524325B8E0025A1EB /* demo_password.txt */; };
+		03CE93EC24325B8F0025A1EB /* primary_first_sub_category.txt in Resources */ = {isa = PBXBuildFile; fileRef = 03CE93B624325B8E0025A1EB /* primary_first_sub_category.txt */; };
+		03CE93ED24325B8F0025A1EB /* privacy_url.txt in Resources */ = {isa = PBXBuildFile; fileRef = 03CE93B824325B8E0025A1EB /* privacy_url.txt */; };
+		03CE93EE24325B8F0025A1EB /* subtitle.txt in Resources */ = {isa = PBXBuildFile; fileRef = 03CE93B924325B8E0025A1EB /* subtitle.txt */; };
+		03CE93EF24325B8F0025A1EB /* support_url.txt in Resources */ = {isa = PBXBuildFile; fileRef = 03CE93BA24325B8E0025A1EB /* support_url.txt */; };
+		03CE93F024325B8F0025A1EB /* keywords.txt in Resources */ = {isa = PBXBuildFile; fileRef = 03CE93BB24325B8E0025A1EB /* keywords.txt */; };
+		03CE93F124325B8F0025A1EB /* apple_tv_privacy_policy.txt in Resources */ = {isa = PBXBuildFile; fileRef = 03CE93BC24325B8E0025A1EB /* apple_tv_privacy_policy.txt */; };
+		03CE93F224325B8F0025A1EB /* promotional_text.txt in Resources */ = {isa = PBXBuildFile; fileRef = 03CE93BD24325B8E0025A1EB /* promotional_text.txt */; };
+		03CE93F324325B8F0025A1EB /* release_notes.txt in Resources */ = {isa = PBXBuildFile; fileRef = 03CE93BE24325B8E0025A1EB /* release_notes.txt */; };
+		03CE93F424325B8F0025A1EB /* name.txt in Resources */ = {isa = PBXBuildFile; fileRef = 03CE93BF24325B8E0025A1EB /* name.txt */; };
+		03CE93F524325B8F0025A1EB /* marketing_url.txt in Resources */ = {isa = PBXBuildFile; fileRef = 03CE93C024325B8E0025A1EB /* marketing_url.txt */; };
+		03CE93F624325B8F0025A1EB /* description.txt in Resources */ = {isa = PBXBuildFile; fileRef = 03CE93C124325B8E0025A1EB /* description.txt */; };
+		03CE93F724325B8F0025A1EB /* primary_category.txt in Resources */ = {isa = PBXBuildFile; fileRef = 03CE93C224325B8E0025A1EB /* primary_category.txt */; };
+		03CE93F824325B8F0025A1EB /* report.xml in Resources */ = {isa = PBXBuildFile; fileRef = 03CE93C324325B8E0025A1EB /* report.xml */; };
+		03CE93F924325B8F0025A1EB /* Snapfile in Resources */ = {isa = PBXBuildFile; fileRef = 03CE93C424325B8E0025A1EB /* Snapfile */; };
+		03CE93FB24325C200025A1EB /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 03CE93FA24325C200025A1EB /* Podfile */; };
+		CCDF095F90250E7DDAF2F00A /* Pods_LitterBoxUser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ABB787F4B97B34236ADF7A9 /* Pods_LitterBoxUser.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		03CE9345242F99650025A1EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 03CE931A242F8CB60025A1EB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03CE9321242F8CB60025A1EB;
+			remoteInfo = LitterBoxUser;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03CE9322242F8CB60025A1EB /* LitterBoxUser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LitterBoxUser.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		03CE9325242F8CB60025A1EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		03CE9327242F8CB60025A1EB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		03CE9329242F8CB60025A1EB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		03CE932B242F8CB70025A1EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		03CE932E242F8CB70025A1EB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		03CE9331242F8CB70025A1EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		03CE9333242F8CB70025A1EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03CE9340242F99650025A1EB /* LitterBoxUserUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LitterBoxUserUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		03CE9342242F99650025A1EB /* LitterBoxUserUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LitterBoxUserUITests.swift; sourceTree = "<group>"; };
+		03CE9344242F99650025A1EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03CE934A242F9A500025A1EB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		03CE9352242F9BC00025A1EB /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		03CE9355242F9C3F0025A1EB /* CatDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatDetailView.swift; sourceTree = "<group>"; };
+		03CE9357242F9C850025A1EB /* NewCatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCatView.swift; sourceTree = "<group>"; };
+		03CE9359242F9CAB0025A1EB /* SignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
+		03CE935B242F9CC80025A1EB /* LogIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogIn.swift; sourceTree = "<group>"; };
+		03CE935D242F9CE10025A1EB /* CatRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatRowView.swift; sourceTree = "<group>"; };
+		03CE935F242F9D1E0025A1EB /* LitterTripsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LitterTripsView.swift; sourceTree = "<group>"; };
+		03CE9361242F9D420025A1EB /* LitterTripDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LitterTripDetailView.swift; sourceTree = "<group>"; };
+		03CE9363242F9D6E0025A1EB /* FirebaseImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseImageView.swift; sourceTree = "<group>"; };
+		03CE9366242F9D9A0025A1EB /* CustomInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInput.swift; sourceTree = "<group>"; };
+		03CE9368242F9DB70025A1EB /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		03CE936B242F9DEE0025A1EB /* ImagePickerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerController.swift; sourceTree = "<group>"; };
+		03CE936E242F9E1B0025A1EB /* FirebaseSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseSession.swift; sourceTree = "<group>"; };
+		03CE9370242F9E320025A1EB /* Cat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cat.swift; sourceTree = "<group>"; };
+		03CE9372242F9E4D0025A1EB /* LitterTrip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LitterTrip.swift; sourceTree = "<group>"; };
+		03CE9384243222EB0025A1EB /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapshotHelper.swift; path = fastlane/SnapshotHelper.swift; sourceTree = SOURCE_ROOT; };
+		03CE938624322CA90025A1EB /* Just Testing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Just Testing.swift"; sourceTree = "<group>"; };
+		03CE938B24325B8E0025A1EB /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		03CE938D24325B8E0025A1EB /* iPhone 11 Pro-01Cats.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone 11 Pro-01Cats.png"; sourceTree = "<group>"; };
+		03CE938E24325B8E0025A1EB /* iPhone 11 Pro-03LitterTrips.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone 11 Pro-03LitterTrips.png"; sourceTree = "<group>"; };
+		03CE938F24325B8E0025A1EB /* iPhone 11 Pro-04LitterTripDetail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone 11 Pro-04LitterTripDetail.png"; sourceTree = "<group>"; };
+		03CE939024325B8E0025A1EB /* iPhone 11 Pro-02CatDetail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone 11 Pro-02CatDetail.png"; sourceTree = "<group>"; };
+		03CE939124325B8E0025A1EB /* screenshots.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = screenshots.html; sourceTree = "<group>"; };
+		03CE939224325B8E0025A1EB /* Pluginfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Pluginfile; sourceTree = "<group>"; };
+		03CE939324325B8E0025A1EB /* Appfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Appfile; sourceTree = "<group>"; };
+		03CE939424325B8E0025A1EB /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = "<group>"; };
+		03CE939524325B8E0025A1EB /* Deliverfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Deliverfile; sourceTree = "<group>"; };
+		03CE939624325B8E0025A1EB /* Fastfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Fastfile; sourceTree = "<group>"; };
+		03CE939724325B8E0025A1EB /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		03CE939824325B8E0025A1EB /* Matchfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Matchfile; sourceTree = "<group>"; };
+		03CE939A24325B8E0025A1EB /* copyright.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = copyright.txt; sourceTree = "<group>"; };
+		03CE939C24325B8E0025A1EB /* phone_number.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = phone_number.txt; sourceTree = "<group>"; };
+		03CE939D24325B8E0025A1EB /* address_line1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = address_line1.txt; sourceTree = "<group>"; };
+		03CE939E24325B8E0025A1EB /* country.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = country.txt; sourceTree = "<group>"; };
+		03CE939F24325B8E0025A1EB /* city_name.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = city_name.txt; sourceTree = "<group>"; };
+		03CE93A024325B8E0025A1EB /* address_line3.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = address_line3.txt; sourceTree = "<group>"; };
+		03CE93A124325B8E0025A1EB /* address_line2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = address_line2.txt; sourceTree = "<group>"; };
+		03CE93A224325B8E0025A1EB /* trade_name.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = trade_name.txt; sourceTree = "<group>"; };
+		03CE93A324325B8E0025A1EB /* email_address.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = email_address.txt; sourceTree = "<group>"; };
+		03CE93A424325B8E0025A1EB /* is_displayed_on_app_store.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = is_displayed_on_app_store.txt; sourceTree = "<group>"; };
+		03CE93A524325B8E0025A1EB /* last_name.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = last_name.txt; sourceTree = "<group>"; };
+		03CE93A624325B8E0025A1EB /* postal_code.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = postal_code.txt; sourceTree = "<group>"; };
+		03CE93A724325B8E0025A1EB /* first_name.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = first_name.txt; sourceTree = "<group>"; };
+		03CE93A824325B8E0025A1EB /* state.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = state.txt; sourceTree = "<group>"; };
+		03CE93A924325B8E0025A1EB /* app_store_rating_config.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = app_store_rating_config.json; sourceTree = "<group>"; };
+		03CE93AA24325B8E0025A1EB /* secondary_first_sub_category.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = secondary_first_sub_category.txt; sourceTree = "<group>"; };
+		03CE93AB24325B8E0025A1EB /* secondary_category.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = secondary_category.txt; sourceTree = "<group>"; };
+		03CE93AC24325B8E0025A1EB /* secondary_second_sub_category.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = secondary_second_sub_category.txt; sourceTree = "<group>"; };
+		03CE93AD24325B8E0025A1EB /* primary_second_sub_category.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = primary_second_sub_category.txt; sourceTree = "<group>"; };
+		03CE93AF24325B8E0025A1EB /* phone_number.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = phone_number.txt; sourceTree = "<group>"; };
+		03CE93B024325B8E0025A1EB /* demo_user.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = demo_user.txt; sourceTree = "<group>"; };
+		03CE93B124325B8E0025A1EB /* notes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = notes.txt; sourceTree = "<group>"; };
+		03CE93B224325B8E0025A1EB /* email_address.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = email_address.txt; sourceTree = "<group>"; };
+		03CE93B324325B8E0025A1EB /* last_name.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = last_name.txt; sourceTree = "<group>"; };
+		03CE93B424325B8E0025A1EB /* first_name.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = first_name.txt; sourceTree = "<group>"; };
+		03CE93B524325B8E0025A1EB /* demo_password.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = demo_password.txt; sourceTree = "<group>"; };
+		03CE93B624325B8E0025A1EB /* primary_first_sub_category.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = primary_first_sub_category.txt; sourceTree = "<group>"; };
+		03CE93B824325B8E0025A1EB /* privacy_url.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = privacy_url.txt; sourceTree = "<group>"; };
+		03CE93B924325B8E0025A1EB /* subtitle.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = subtitle.txt; sourceTree = "<group>"; };
+		03CE93BA24325B8E0025A1EB /* support_url.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = support_url.txt; sourceTree = "<group>"; };
+		03CE93BB24325B8E0025A1EB /* keywords.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = keywords.txt; sourceTree = "<group>"; };
+		03CE93BC24325B8E0025A1EB /* apple_tv_privacy_policy.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = apple_tv_privacy_policy.txt; sourceTree = "<group>"; };
+		03CE93BD24325B8E0025A1EB /* promotional_text.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = promotional_text.txt; sourceTree = "<group>"; };
+		03CE93BE24325B8E0025A1EB /* release_notes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = release_notes.txt; sourceTree = "<group>"; };
+		03CE93BF24325B8E0025A1EB /* name.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = name.txt; sourceTree = "<group>"; };
+		03CE93C024325B8E0025A1EB /* marketing_url.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = marketing_url.txt; sourceTree = "<group>"; };
+		03CE93C124325B8E0025A1EB /* description.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = description.txt; sourceTree = "<group>"; };
+		03CE93C224325B8E0025A1EB /* primary_category.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = primary_category.txt; sourceTree = "<group>"; };
+		03CE93C324325B8E0025A1EB /* report.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = report.xml; sourceTree = "<group>"; };
+		03CE93C424325B8E0025A1EB /* Snapfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Snapfile; sourceTree = "<group>"; };
+		03CE93FA24325C200025A1EB /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		3DF5F38E39499B57101B2D8F /* Pods-LitterBoxUser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LitterBoxUser.debug.xcconfig"; path = "Target Support Files/Pods-LitterBoxUser/Pods-LitterBoxUser.debug.xcconfig"; sourceTree = "<group>"; };
+		6ABB787F4B97B34236ADF7A9 /* Pods_LitterBoxUser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LitterBoxUser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3CBD3E645A215AB905FAE39 /* Pods-LitterBoxUser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LitterBoxUser.release.xcconfig"; path = "Target Support Files/Pods-LitterBoxUser/Pods-LitterBoxUser.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		03CE931F242F8CB60025A1EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCDF095F90250E7DDAF2F00A /* Pods_LitterBoxUser.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03CE933D242F99650025A1EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03CE9319242F8CB60025A1EB = {
+			isa = PBXGroup;
+			children = (
+				03CE9324242F8CB60025A1EB /* LitterBoxUser */,
+				03CE9341242F99650025A1EB /* LitterBoxUserUITests */,
+				03CE9323242F8CB60025A1EB /* Products */,
+				C0743B97342C032504256541 /* Pods */,
+				BA33AB88BB4CD81D913330C6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		03CE9323242F8CB60025A1EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				03CE9322242F8CB60025A1EB /* LitterBoxUser.app */,
+				03CE9340242F99650025A1EB /* LitterBoxUserUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		03CE9324242F8CB60025A1EB /* LitterBoxUser */ = {
+			isa = PBXGroup;
+			children = (
+				03CE938924325B8E0025A1EB /* fastlane */,
+				03CE936D242F9E080025A1EB /* Session */,
+				03CE936A242F9DDC0025A1EB /* Controllers */,
+				03CE9365242F9D860025A1EB /* Components */,
+				03CE9354242F9BF10025A1EB /* Views */,
+				03CE9351242F9BB00025A1EB /* Models */,
+				03CE9339242F924F0025A1EB /* App */,
+				03CE932B242F8CB70025A1EB /* Assets.xcassets */,
+				03CE9333242F8CB70025A1EB /* Info.plist */,
+				03CE934A242F9A500025A1EB /* GoogleService-Info.plist */,
+				03CE9330242F8CB70025A1EB /* LaunchScreen.storyboard */,
+				03CE932D242F8CB70025A1EB /* Preview Content */,
+			);
+			path = LitterBoxUser;
+			sourceTree = "<group>";
+		};
+		03CE932D242F8CB70025A1EB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				03CE932E242F8CB70025A1EB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		03CE9339242F924F0025A1EB /* App */ = {
+			isa = PBXGroup;
+			children = (
+				03CE9327242F8CB60025A1EB /* SceneDelegate.swift */,
+				03CE9325242F8CB60025A1EB /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		03CE9341242F99650025A1EB /* LitterBoxUserUITests */ = {
+			isa = PBXGroup;
+			children = (
+				03CE9384243222EB0025A1EB /* SnapshotHelper.swift */,
+				03CE9342242F99650025A1EB /* LitterBoxUserUITests.swift */,
+				03CE9344242F99650025A1EB /* Info.plist */,
+				03CE938624322CA90025A1EB /* Just Testing.swift */,
+			);
+			path = LitterBoxUserUITests;
+			sourceTree = "<group>";
+		};
+		03CE9351242F9BB00025A1EB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				03CE9352242F9BC00025A1EB /* User.swift */,
+				03CE9370242F9E320025A1EB /* Cat.swift */,
+				03CE9372242F9E4D0025A1EB /* LitterTrip.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		03CE9354242F9BF10025A1EB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				03CE9329242F8CB60025A1EB /* ContentView.swift */,
+				03CE9355242F9C3F0025A1EB /* CatDetailView.swift */,
+				03CE9357242F9C850025A1EB /* NewCatView.swift */,
+				03CE9359242F9CAB0025A1EB /* SignUp.swift */,
+				03CE935B242F9CC80025A1EB /* LogIn.swift */,
+				03CE935D242F9CE10025A1EB /* CatRowView.swift */,
+				03CE935F242F9D1E0025A1EB /* LitterTripsView.swift */,
+				03CE9361242F9D420025A1EB /* LitterTripDetailView.swift */,
+				03CE9363242F9D6E0025A1EB /* FirebaseImageView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		03CE9365242F9D860025A1EB /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				03CE9366242F9D9A0025A1EB /* CustomInput.swift */,
+				03CE9368242F9DB70025A1EB /* CustomButton.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		03CE936A242F9DDC0025A1EB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				03CE936B242F9DEE0025A1EB /* ImagePickerController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		03CE936D242F9E080025A1EB /* Session */ = {
+			isa = PBXGroup;
+			children = (
+				03CE936E242F9E1B0025A1EB /* FirebaseSession.swift */,
+			);
+			path = Session;
+			sourceTree = "<group>";
+		};
+		03CE938924325B8E0025A1EB /* fastlane */ = {
+			isa = PBXGroup;
+			children = (
+				03CE938A24325B8E0025A1EB /* screenshots */,
+				03CE939224325B8E0025A1EB /* Pluginfile */,
+				03CE939324325B8E0025A1EB /* Appfile */,
+				03CE939424325B8E0025A1EB /* SnapshotHelper.swift */,
+				03CE939524325B8E0025A1EB /* Deliverfile */,
+				03CE939624325B8E0025A1EB /* Fastfile */,
+				03CE939724325B8E0025A1EB /* README.md */,
+				03CE939824325B8E0025A1EB /* Matchfile */,
+				03CE939924325B8E0025A1EB /* metadata */,
+				03CE93C324325B8E0025A1EB /* report.xml */,
+				03CE93C424325B8E0025A1EB /* Snapfile */,
+			);
+			path = fastlane;
+			sourceTree = SOURCE_ROOT;
+		};
+		03CE938A24325B8E0025A1EB /* screenshots */ = {
+			isa = PBXGroup;
+			children = (
+				03CE938B24325B8E0025A1EB /* README.txt */,
+				03CE938C24325B8E0025A1EB /* en-US */,
+				03CE939124325B8E0025A1EB /* screenshots.html */,
+			);
+			path = screenshots;
+			sourceTree = "<group>";
+		};
+		03CE938C24325B8E0025A1EB /* en-US */ = {
+			isa = PBXGroup;
+			children = (
+				03CE938D24325B8E0025A1EB /* iPhone 11 Pro-01Cats.png */,
+				03CE938E24325B8E0025A1EB /* iPhone 11 Pro-03LitterTrips.png */,
+				03CE938F24325B8E0025A1EB /* iPhone 11 Pro-04LitterTripDetail.png */,
+				03CE939024325B8E0025A1EB /* iPhone 11 Pro-02CatDetail.png */,
+			);
+			path = "en-US";
+			sourceTree = "<group>";
+		};
+		03CE939924325B8E0025A1EB /* metadata */ = {
+			isa = PBXGroup;
+			children = (
+				03CE939A24325B8E0025A1EB /* copyright.txt */,
+				03CE939B24325B8E0025A1EB /* trade_representative_contact_information */,
+				03CE93A924325B8E0025A1EB /* app_store_rating_config.json */,
+				03CE93AA24325B8E0025A1EB /* secondary_first_sub_category.txt */,
+				03CE93AB24325B8E0025A1EB /* secondary_category.txt */,
+				03CE93AC24325B8E0025A1EB /* secondary_second_sub_category.txt */,
+				03CE93AD24325B8E0025A1EB /* primary_second_sub_category.txt */,
+				03CE93AE24325B8E0025A1EB /* review_information */,
+				03CE93B624325B8E0025A1EB /* primary_first_sub_category.txt */,
+				03CE93B724325B8E0025A1EB /* en-US */,
+				03CE93C224325B8E0025A1EB /* primary_category.txt */,
+			);
+			path = metadata;
+			sourceTree = "<group>";
+		};
+		03CE939B24325B8E0025A1EB /* trade_representative_contact_information */ = {
+			isa = PBXGroup;
+			children = (
+				03CE939C24325B8E0025A1EB /* phone_number.txt */,
+				03CE939D24325B8E0025A1EB /* address_line1.txt */,
+				03CE939E24325B8E0025A1EB /* country.txt */,
+				03CE939F24325B8E0025A1EB /* city_name.txt */,
+				03CE93A024325B8E0025A1EB /* address_line3.txt */,
+				03CE93A124325B8E0025A1EB /* address_line2.txt */,
+				03CE93A224325B8E0025A1EB /* trade_name.txt */,
+				03CE93A324325B8E0025A1EB /* email_address.txt */,
+				03CE93A424325B8E0025A1EB /* is_displayed_on_app_store.txt */,
+				03CE93A524325B8E0025A1EB /* last_name.txt */,
+				03CE93A624325B8E0025A1EB /* postal_code.txt */,
+				03CE93A724325B8E0025A1EB /* first_name.txt */,
+				03CE93A824325B8E0025A1EB /* state.txt */,
+			);
+			path = trade_representative_contact_information;
+			sourceTree = "<group>";
+		};
+		03CE93AE24325B8E0025A1EB /* review_information */ = {
+			isa = PBXGroup;
+			children = (
+				03CE93AF24325B8E0025A1EB /* phone_number.txt */,
+				03CE93B024325B8E0025A1EB /* demo_user.txt */,
+				03CE93B124325B8E0025A1EB /* notes.txt */,
+				03CE93B224325B8E0025A1EB /* email_address.txt */,
+				03CE93B324325B8E0025A1EB /* last_name.txt */,
+				03CE93B424325B8E0025A1EB /* first_name.txt */,
+				03CE93B524325B8E0025A1EB /* demo_password.txt */,
+			);
+			path = review_information;
+			sourceTree = "<group>";
+		};
+		03CE93B724325B8E0025A1EB /* en-US */ = {
+			isa = PBXGroup;
+			children = (
+				03CE93B824325B8E0025A1EB /* privacy_url.txt */,
+				03CE93B924325B8E0025A1EB /* subtitle.txt */,
+				03CE93BA24325B8E0025A1EB /* support_url.txt */,
+				03CE93BB24325B8E0025A1EB /* keywords.txt */,
+				03CE93BC24325B8E0025A1EB /* apple_tv_privacy_policy.txt */,
+				03CE93BD24325B8E0025A1EB /* promotional_text.txt */,
+				03CE93BE24325B8E0025A1EB /* release_notes.txt */,
+				03CE93BF24325B8E0025A1EB /* name.txt */,
+				03CE93C024325B8E0025A1EB /* marketing_url.txt */,
+				03CE93C124325B8E0025A1EB /* description.txt */,
+			);
+			path = "en-US";
+			sourceTree = "<group>";
+		};
+		BA33AB88BB4CD81D913330C6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				03CE93FA24325C200025A1EB /* Podfile */,
+				6ABB787F4B97B34236ADF7A9 /* Pods_LitterBoxUser.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C0743B97342C032504256541 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3DF5F38E39499B57101B2D8F /* Pods-LitterBoxUser.debug.xcconfig */,
+				A3CBD3E645A215AB905FAE39 /* Pods-LitterBoxUser.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		03CE9321242F8CB60025A1EB /* LitterBoxUser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03CE9336242F8CB70025A1EB /* Build configuration list for PBXNativeTarget "LitterBoxUser" */;
+			buildPhases = (
+				D4AFA9C9C1E9D5DF74198F6D /* [CP] Check Pods Manifest.lock */,
+				03CE931E242F8CB60025A1EB /* Sources */,
+				03CE931F242F8CB60025A1EB /* Frameworks */,
+				03CE9320242F8CB60025A1EB /* Resources */,
+				6B9A9249E807BC91F3D39778 /* [CP] Embed Pods Frameworks */,
+				03CE93882432367E0025A1EB /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LitterBoxUser;
+			productName = LitterBoxUser;
+			productReference = 03CE9322242F8CB60025A1EB /* LitterBoxUser.app */;
+			productType = "com.apple.product-type.application";
+		};
+		03CE933F242F99650025A1EB /* LitterBoxUserUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03CE9347242F99650025A1EB /* Build configuration list for PBXNativeTarget "LitterBoxUserUITests" */;
+			buildPhases = (
+				03CE933C242F99650025A1EB /* Sources */,
+				03CE933D242F99650025A1EB /* Frameworks */,
+				03CE933E242F99650025A1EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				03CE9346242F99650025A1EB /* PBXTargetDependency */,
+			);
+			name = LitterBoxUserUITests;
+			productName = LitterBoxUserUITests;
+			productReference = 03CE9340242F99650025A1EB /* LitterBoxUserUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		03CE931A242F8CB60025A1EB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "Steve Bargelt";
+				TargetAttributes = {
+					03CE9321242F8CB60025A1EB = {
+						CreatedOnToolsVersion = 11.4;
+					};
+					03CE933F242F99650025A1EB = {
+						CreatedOnToolsVersion = 11.4;
+						TestTargetID = 03CE9321242F8CB60025A1EB;
+					};
+				};
+			};
+			buildConfigurationList = 03CE931D242F8CB60025A1EB /* Build configuration list for PBXProject "LitterBoxUser" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 03CE9319242F8CB60025A1EB;
+			productRefGroup = 03CE9323242F8CB60025A1EB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				03CE9321242F8CB60025A1EB /* LitterBoxUser */,
+				03CE933F242F99650025A1EB /* LitterBoxUserUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		03CE9320242F8CB60025A1EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03CE93D724325B8E0025A1EB /* address_line3.txt in Resources */,
+				03CE93CF24325B8E0025A1EB /* Fastfile in Resources */,
+				03CE93D424325B8E0025A1EB /* address_line1.txt in Resources */,
+				03CE93C824325B8E0025A1EB /* iPhone 11 Pro-04LitterTripDetail.png in Resources */,
+				03CE93D524325B8E0025A1EB /* country.txt in Resources */,
+				03CE93DB24325B8F0025A1EB /* is_displayed_on_app_store.txt in Resources */,
+				03CE9332242F8CB70025A1EB /* LaunchScreen.storyboard in Resources */,
+				03CE93DD24325B8F0025A1EB /* postal_code.txt in Resources */,
+				03CE93DC24325B8F0025A1EB /* last_name.txt in Resources */,
+				03CE93FB24325C200025A1EB /* Podfile in Resources */,
+				03CE93D824325B8E0025A1EB /* address_line2.txt in Resources */,
+				03CE93E424325B8F0025A1EB /* primary_second_sub_category.txt in Resources */,
+				03CE93E524325B8F0025A1EB /* phone_number.txt in Resources */,
+				03CE93F224325B8F0025A1EB /* promotional_text.txt in Resources */,
+				03CE93E824325B8F0025A1EB /* email_address.txt in Resources */,
+				03CE93E724325B8F0025A1EB /* notes.txt in Resources */,
+				03CE93EB24325B8F0025A1EB /* demo_password.txt in Resources */,
+				03CE93EA24325B8F0025A1EB /* first_name.txt in Resources */,
+				03CE93E024325B8F0025A1EB /* app_store_rating_config.json in Resources */,
+				03CE93F724325B8F0025A1EB /* primary_category.txt in Resources */,
+				03CE93C624325B8E0025A1EB /* iPhone 11 Pro-01Cats.png in Resources */,
+				03CE93D624325B8E0025A1EB /* city_name.txt in Resources */,
+				03CE932F242F8CB70025A1EB /* Preview Assets.xcassets in Resources */,
+				03CE934B242F9A500025A1EB /* GoogleService-Info.plist in Resources */,
+				03CE93D024325B8E0025A1EB /* README.md in Resources */,
+				03CE93CA24325B8E0025A1EB /* screenshots.html in Resources */,
+				03CE93CE24325B8E0025A1EB /* Deliverfile in Resources */,
+				03CE93E324325B8F0025A1EB /* secondary_second_sub_category.txt in Resources */,
+				03CE93ED24325B8F0025A1EB /* privacy_url.txt in Resources */,
+				03CE93D124325B8E0025A1EB /* Matchfile in Resources */,
+				03CE93EF24325B8F0025A1EB /* support_url.txt in Resources */,
+				03CE93C924325B8E0025A1EB /* iPhone 11 Pro-02CatDetail.png in Resources */,
+				03CE93D324325B8E0025A1EB /* phone_number.txt in Resources */,
+				03CE93EE24325B8F0025A1EB /* subtitle.txt in Resources */,
+				03CE93F524325B8F0025A1EB /* marketing_url.txt in Resources */,
+				03CE93DA24325B8F0025A1EB /* email_address.txt in Resources */,
+				03CE93E124325B8F0025A1EB /* secondary_first_sub_category.txt in Resources */,
+				03CE93F024325B8F0025A1EB /* keywords.txt in Resources */,
+				03CE93F124325B8F0025A1EB /* apple_tv_privacy_policy.txt in Resources */,
+				03CE93C524325B8E0025A1EB /* README.txt in Resources */,
+				03CE93CB24325B8E0025A1EB /* Pluginfile in Resources */,
+				03CE93CC24325B8E0025A1EB /* Appfile in Resources */,
+				03CE93F924325B8F0025A1EB /* Snapfile in Resources */,
+				03CE93F324325B8F0025A1EB /* release_notes.txt in Resources */,
+				03CE93C724325B8E0025A1EB /* iPhone 11 Pro-03LitterTrips.png in Resources */,
+				03CE93F624325B8F0025A1EB /* description.txt in Resources */,
+				03CE93DE24325B8F0025A1EB /* first_name.txt in Resources */,
+				03CE93D924325B8F0025A1EB /* trade_name.txt in Resources */,
+				03CE93DF24325B8F0025A1EB /* state.txt in Resources */,
+				03CE93E624325B8F0025A1EB /* demo_user.txt in Resources */,
+				03CE93E924325B8F0025A1EB /* last_name.txt in Resources */,
+				03CE93F424325B8F0025A1EB /* name.txt in Resources */,
+				03CE93E224325B8F0025A1EB /* secondary_category.txt in Resources */,
+				03CE93EC24325B8F0025A1EB /* primary_first_sub_category.txt in Resources */,
+				03CE93F824325B8F0025A1EB /* report.xml in Resources */,
+				03CE93D224325B8E0025A1EB /* copyright.txt in Resources */,
+				03CE932C242F8CB70025A1EB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03CE933E242F99650025A1EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		03CE93882432367E0025A1EB /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${TARGET_NAME}",
+				"$(SRCROOT)/$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/FirebaseCrashlytics/run\"\n";
+		};
+		6B9A9249E807BC91F3D39778 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LitterBoxUser/Pods-LitterBoxUser-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LitterBoxUser/Pods-LitterBoxUser-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LitterBoxUser/Pods-LitterBoxUser-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D4AFA9C9C1E9D5DF74198F6D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LitterBoxUser-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		03CE931E242F8CB60025A1EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03CE9373242F9E4D0025A1EB /* LitterTrip.swift in Sources */,
+				03CE935A242F9CAB0025A1EB /* SignUp.swift in Sources */,
+				03CE9360242F9D1E0025A1EB /* LitterTripsView.swift in Sources */,
+				03CE93CD24325B8E0025A1EB /* SnapshotHelper.swift in Sources */,
+				03CE935E242F9CE10025A1EB /* CatRowView.swift in Sources */,
+				03CE9353242F9BC00025A1EB /* User.swift in Sources */,
+				03CE9369242F9DB70025A1EB /* CustomButton.swift in Sources */,
+				03CE936F242F9E1B0025A1EB /* FirebaseSession.swift in Sources */,
+				03CE9356242F9C3F0025A1EB /* CatDetailView.swift in Sources */,
+				03CE9364242F9D6E0025A1EB /* FirebaseImageView.swift in Sources */,
+				03CE936C242F9DEE0025A1EB /* ImagePickerController.swift in Sources */,
+				03CE9326242F8CB60025A1EB /* AppDelegate.swift in Sources */,
+				03CE9362242F9D420025A1EB /* LitterTripDetailView.swift in Sources */,
+				03CE9367242F9D9A0025A1EB /* CustomInput.swift in Sources */,
+				03CE9328242F8CB60025A1EB /* SceneDelegate.swift in Sources */,
+				03CE9358242F9C850025A1EB /* NewCatView.swift in Sources */,
+				03CE932A242F8CB60025A1EB /* ContentView.swift in Sources */,
+				03CE9371242F9E320025A1EB /* Cat.swift in Sources */,
+				03CE935C242F9CC80025A1EB /* LogIn.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03CE933C242F99650025A1EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03CE938724322CA90025A1EB /* Just Testing.swift in Sources */,
+				03CE9343242F99650025A1EB /* LitterBoxUserUITests.swift in Sources */,
+				03CE9385243222EB0025A1EB /* SnapshotHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		03CE9346242F99650025A1EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 03CE9321242F8CB60025A1EB /* LitterBoxUser */;
+			targetProxy = 03CE9345242F99650025A1EB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		03CE9330242F8CB70025A1EB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				03CE9331242F8CB70025A1EB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		03CE9334242F8CB70025A1EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		03CE9335242F8CB70025A1EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		03CE9337242F8CB70025A1EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DF5F38E39499B57101B2D8F /* Pods-LitterBoxUser.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"LitterBoxUser/Preview Content\"";
+				DEVELOPMENT_TEAM = DAV93N6F9B;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = LitterBoxUser/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.harebrained-apps.litterboxuser";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		03CE9338242F8CB70025A1EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3CBD3E645A215AB905FAE39 /* Pods-LitterBoxUser.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"LitterBoxUser/Preview Content\"";
+				DEVELOPMENT_TEAM = DAV93N6F9B;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = LitterBoxUser/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.harebrained-apps.litterboxuser";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		03CE9348242F99650025A1EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DAV93N6F9B;
+				INFOPLIST_FILE = LitterBoxUserUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.harebrained-apps.litterboxuser.LitterBoxUserUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LitterBoxUser;
+			};
+			name = Debug;
+		};
+		03CE9349242F99650025A1EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DAV93N6F9B;
+				INFOPLIST_FILE = LitterBoxUserUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.harebrained-apps.litterboxuser.LitterBoxUserUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LitterBoxUser;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		03CE931D242F8CB60025A1EB /* Build configuration list for PBXProject "LitterBoxUser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03CE9334242F8CB70025A1EB /* Debug */,
+				03CE9335242F8CB70025A1EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03CE9336242F8CB70025A1EB /* Build configuration list for PBXNativeTarget "LitterBoxUser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03CE9337242F8CB70025A1EB /* Debug */,
+				03CE9338242F8CB70025A1EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03CE9347242F99650025A1EB /* Build configuration list for PBXNativeTarget "LitterBoxUserUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03CE9348242F99650025A1EB /* Debug */,
+				03CE9349242F99650025A1EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 03CE931A242F8CB60025A1EB /* Project object */;
+}

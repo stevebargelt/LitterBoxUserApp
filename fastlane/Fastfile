@@ -1,0 +1,58 @@
+# Uncomment the line if you want fastlane to automatically update itself
+update_fastlane
+
+default_platform(:ios)
+
+platform :ios do
+  
+#  desc "Create app on Apple Developer and App Store Connect sites"
+#  lane :create_app do
+#    produce
+#  end
+
+  lane :certificates do
+    match(type: "development", readonly: true)
+    # match(app_identifier: ["com.harebrained-apps.litterboxuser", "com.harebrained-apps.litterboxuser.staging"], readonly: true)
+  end
+
+  lane :register do
+    register_devices(devices_file: "./fastlane/devices.txt")
+    match(type: "adhoc", force_for_new_devices: true)
+  end
+
+  lane :justMatch do
+    match(type: "adhoc", force_for_new_devices: true)
+  end
+
+  desc "Firebase Alpha Distribution"
+  lane :alpha do
+    #ensure_git_status_clean
+    increment_build_number
+    # sh("curl", ""https://api.ciscospark.com/v1/webhooks/incoming/Y2lzY29zcGFyazovL3VzL1dFQkhPT0svZmE5OTU0NTQtNjJmZi00MzU2LTljM2YtZWMwZTMwOWFjMTRh"", "-X", "POST", -H "Content-Type: application/json", -d "'{"text" : "This is a message from a Cisco Webex Teams incoming webhook."}'")
+
+    match(type: "adhoc")
+    build_app(workspace: "LitterBoxUser.xcworkspace", scheme: "LitterBoxUser")
+    firebase_app_distribution(
+      app: "1:46225580206:ios:8e8060d41c0762ca3d0d3f",
+      testers: "steve@bargelt.com, steven.bargelt@pse.com",
+      release_notes: "Lots of amazing new features to test out!",
+    )
+  end
+
+  desc "Take screenshots"
+  lane :screenshot do
+    snapshot
+  end
+
+  desc "Push a new beta build to TestFlight"
+  lane :beta do
+    build_app(workspace: "LitterBoxUser.xcworkspace", scheme: "LitterBoxUser")
+    upload_to_testflight
+  end
+end
+
+
+desc "Take screenshots"
+  lane :screenshot do
+    snapshot
+  end

@@ -1,0 +1,2 @@
+LitterBoxUser is an app that when paired with our backend services can tell you which of your cats is headed into or our of the litterbox. 
+
