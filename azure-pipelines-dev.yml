@@ -19,3 +19,11 @@ steps:
     xcWorkspacePath: '**/*.xcodeproj/project.xcworkspace'
     xcodeVersion: 'default' # Options: 8, 9, 10, default, specifyPath
 
+- task: AppCenterDistribute@3
+  inputs:
+    serverEndpoint: 'Azure AppCenter - SteveBargelt'
+    appSlug: 'steve-arvs/LitterBoxUser-1'
+    appFile: 
+    releaseNotesOption: 'input'
+    releaseNotesInput: 'RELEASE NOTES'
+    destinationType: 'store'
