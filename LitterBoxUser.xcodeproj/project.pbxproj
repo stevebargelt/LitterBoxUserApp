@@ -32,59 +32,6 @@
 		03CE9373242F9E4D0025A1EB /* LitterTrip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CE9372242F9E4D0025A1EB /* LitterTrip.swift */; };
 		03CE9385243222EB0025A1EB /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CE9384243222EB0025A1EB /* SnapshotHelper.swift */; };
 		03CE938724322CA90025A1EB /* Just Testing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CE938624322CA90025A1EB /* Just Testing.swift */; };
-		03CE93C524325B8E0025A1EB /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 03CE938B24325B8E0025A1EB /* README.txt */; };
-		03CE93C624325B8E0025A1EB /* iPhone 11 Pro-01Cats.png in Resources */ = {isa = PBXBuildFile; fileRef = 03CE938D24325B8E0025A1EB /* iPhone 11 Pro-01Cats.png */; };
-		03CE93C724325B8E0025A1EB /* iPhone 11 Pro-03LitterTrips.png in Resources */ = {isa = PBXBuildFile; fileRef = 03CE938E24325B8E0025A1EB /* iPhone 11 Pro-03LitterTrips.png */; };
-		03CE93C824325B8E0025A1EB /* iPhone 11 Pro-04LitterTripDetail.png in Resources */ = {isa = PBXBuildFile; fileRef = 03CE938F24325B8E0025A1EB /* iPhone 11 Pro-04LitterTripDetail.png */; };
-		03CE93C924325B8E0025A1EB /* iPhone 11 Pro-02CatDetail.png in Resources */ = {isa = PBXBuildFile; fileRef = 03CE939024325B8E0025A1EB /* iPhone 11 Pro-02CatDetail.png */; };
-		03CE93CA24325B8E0025A1EB /* screenshots.html in Resources */ = {isa = PBXBuildFile; fileRef = 03CE939124325B8E0025A1EB /* screenshots.html */; };
-		03CE93CB24325B8E0025A1EB /* Pluginfile in Resources */ = {isa = PBXBuildFile; fileRef = 03CE939224325B8E0025A1EB /* Pluginfile */; };
-		03CE93CC24325B8E0025A1EB /* Appfile in Resources */ = {isa = PBXBuildFile; fileRef = 03CE939324325B8E0025A1EB /* Appfile */; };
-		03CE93CD24325B8E0025A1EB /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CE939424325B8E0025A1EB /* SnapshotHelper.swift */; };
-		03CE93CE24325B8E0025A1EB /* Deliverfile in Resources */ = {isa = PBXBuildFile; fileRef = 03CE939524325B8E0025A1EB /* Deliverfile */; };
-		03CE93CF24325B8E0025A1EB /* Fastfile in Resources */ = {isa = PBXBuildFile; fileRef = 03CE939624325B8E0025A1EB /* Fastfile */; };
-		03CE93D024325B8E0025A1EB /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 03CE939724325B8E0025A1EB /* README.md */; };
-		03CE93D124325B8E0025A1EB /* Matchfile in Resources */ = {isa = PBXBuildFile; fileRef = 03CE939824325B8E0025A1EB /* Matchfile */; };
-		03CE93D224325B8E0025A1EB /* copyright.txt in Resources */ = {isa = PBXBuildFile; fileRef = 03CE939A24325B8E0025A1EB /* copyright.txt */; };
-		03CE93D324325B8E0025A1EB /* phone_number.txt in Resources */ = {isa = PBXBuildFile; fileRef = 03CE939C24325B8E0025A1EB /* phone_number.txt */; };
-		03CE93D424325B8E0025A1EB /* address_line1.txt in Resources */ = {isa = PBXBuildFile; fileRef = 03CE939D24325B8E0025A1EB /* address_line1.txt */; };
-		03CE93D524325B8E0025A1EB /* country.txt in Resources */ = {isa = PBXBuildFile; fileRef = 03CE939E24325B8E0025A1EB /* country.txt */; };
-		03CE93D624325B8E0025A1EB /* city_name.txt in Resources */ = {isa = PBXBuildFile; fileRef = 03CE939F24325B8E0025A1EB /* city_name.txt */; };
-		03CE93D724325B8E0025A1EB /* address_line3.txt in Resources */ = {isa = PBXBuildFile; fileRef = 03CE93A024325B8E0025A1EB /* address_line3.txt */; };
-		03CE93D824325B8E0025A1EB /* address_line2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 03CE93A124325B8E0025A1EB /* address_line2.txt */; };
-		03CE93D924325B8F0025A1EB /* trade_name.txt in Resources */ = {isa = PBXBuildFile; fileRef = 03CE93A224325B8E0025A1EB /* trade_name.txt */; };
-		03CE93DA24325B8F0025A1EB /* email_address.txt in Resources */ = {isa = PBXBuildFile; fileRef = 03CE93A324325B8E0025A1EB /* email_address.txt */; };
-		03CE93DB24325B8F0025A1EB /* is_displayed_on_app_store.txt in Resources */ = {isa = PBXBuildFile; fileRef = 03CE93A424325B8E0025A1EB /* is_displayed_on_app_store.txt */; };
-		03CE93DC24325B8F0025A1EB /* last_name.txt in Resources */ = {isa = PBXBuildFile; fileRef = 03CE93A524325B8E0025A1EB /* last_name.txt */; };
-		03CE93DD24325B8F0025A1EB /* postal_code.txt in Resources */ = {isa = PBXBuildFile; fileRef = 03CE93A624325B8E0025A1EB /* postal_code.txt */; };
-		03CE93DE24325B8F0025A1EB /* first_name.txt in Resources */ = {isa = PBXBuildFile; fileRef = 03CE93A724325B8E0025A1EB /* first_name.txt */; };
-		03CE93DF24325B8F0025A1EB /* state.txt in Resources */ = {isa = PBXBuildFile; fileRef = 03CE93A824325B8E0025A1EB /* state.txt */; };
-		03CE93E024325B8F0025A1EB /* app_store_rating_config.json in Resources */ = {isa = PBXBuildFile; fileRef = 03CE93A924325B8E0025A1EB /* app_store_rating_config.json */; };
-		03CE93E124325B8F0025A1EB /* secondary_first_sub_category.txt in Resources */ = {isa = PBXBuildFile; fileRef = 03CE93AA24325B8E0025A1EB /* secondary_first_sub_category.txt */; };
-		03CE93E224325B8F0025A1EB /* secondary_category.txt in Resources */ = {isa = PBXBuildFile; fileRef = 03CE93AB24325B8E0025A1EB /* secondary_category.txt */; };
-		03CE93E324325B8F0025A1EB /* secondary_second_sub_category.txt in Resources */ = {isa = PBXBuildFile; fileRef = 03CE93AC24325B8E0025A1EB /* secondary_second_sub_category.txt */; };
-		03CE93E424325B8F0025A1EB /* primary_second_sub_category.txt in Resources */ = {isa = PBXBuildFile; fileRef = 03CE93AD24325B8E0025A1EB /* primary_second_sub_category.txt */; };
-		03CE93E524325B8F0025A1EB /* phone_number.txt in Resources */ = {isa = PBXBuildFile; fileRef = 03CE93AF24325B8E0025A1EB /* phone_number.txt */; };
-		03CE93E624325B8F0025A1EB /* demo_user.txt in Resources */ = {isa = PBXBuildFile; fileRef = 03CE93B024325B8E0025A1EB /* demo_user.txt */; };
-		03CE93E724325B8F0025A1EB /* notes.txt in Resources */ = {isa = PBXBuildFile; fileRef = 03CE93B124325B8E0025A1EB /* notes.txt */; };
-		03CE93E824325B8F0025A1EB /* email_address.txt in Resources */ = {isa = PBXBuildFile; fileRef = 03CE93B224325B8E0025A1EB /* email_address.txt */; };
-		03CE93E924325B8F0025A1EB /* last_name.txt in Resources */ = {isa = PBXBuildFile; fileRef = 03CE93B324325B8E0025A1EB /* last_name.txt */; };
-		03CE93EA24325B8F0025A1EB /* first_name.txt in Resources */ = {isa = PBXBuildFile; fileRef = 03CE93B424325B8E0025A1EB /* first_name.txt */; };
-		03CE93EB24325B8F0025A1EB /* demo_password.txt in Resources */ = {isa = PBXBuildFile; fileRef = 03CE93B524325B8E0025A1EB /* demo_password.txt */; };
-		03CE93EC24325B8F0025A1EB /* primary_first_sub_category.txt in Resources */ = {isa = PBXBuildFile; fileRef = 03CE93B624325B8E0025A1EB /* primary_first_sub_category.txt */; };
-		03CE93ED24325B8F0025A1EB /* privacy_url.txt in Resources */ = {isa = PBXBuildFile; fileRef = 03CE93B824325B8E0025A1EB /* privacy_url.txt */; };
-		03CE93EE24325B8F0025A1EB /* subtitle.txt in Resources */ = {isa = PBXBuildFile; fileRef = 03CE93B924325B8E0025A1EB /* subtitle.txt */; };
-		03CE93EF24325B8F0025A1EB /* support_url.txt in Resources */ = {isa = PBXBuildFile; fileRef = 03CE93BA24325B8E0025A1EB /* support_url.txt */; };
-		03CE93F024325B8F0025A1EB /* keywords.txt in Resources */ = {isa = PBXBuildFile; fileRef = 03CE93BB24325B8E0025A1EB /* keywords.txt */; };
-		03CE93F124325B8F0025A1EB /* apple_tv_privacy_policy.txt in Resources */ = {isa = PBXBuildFile; fileRef = 03CE93BC24325B8E0025A1EB /* apple_tv_privacy_policy.txt */; };
-		03CE93F224325B8F0025A1EB /* promotional_text.txt in Resources */ = {isa = PBXBuildFile; fileRef = 03CE93BD24325B8E0025A1EB /* promotional_text.txt */; };
-		03CE93F324325B8F0025A1EB /* release_notes.txt in Resources */ = {isa = PBXBuildFile; fileRef = 03CE93BE24325B8E0025A1EB /* release_notes.txt */; };
-		03CE93F424325B8F0025A1EB /* name.txt in Resources */ = {isa = PBXBuildFile; fileRef = 03CE93BF24325B8E0025A1EB /* name.txt */; };
-		03CE93F524325B8F0025A1EB /* marketing_url.txt in Resources */ = {isa = PBXBuildFile; fileRef = 03CE93C024325B8E0025A1EB /* marketing_url.txt */; };
-		03CE93F624325B8F0025A1EB /* description.txt in Resources */ = {isa = PBXBuildFile; fileRef = 03CE93C124325B8E0025A1EB /* description.txt */; };
-		03CE93F724325B8F0025A1EB /* primary_category.txt in Resources */ = {isa = PBXBuildFile; fileRef = 03CE93C224325B8E0025A1EB /* primary_category.txt */; };
-		03CE93F824325B8F0025A1EB /* report.xml in Resources */ = {isa = PBXBuildFile; fileRef = 03CE93C324325B8E0025A1EB /* report.xml */; };
-		03CE93F924325B8F0025A1EB /* Snapfile in Resources */ = {isa = PBXBuildFile; fileRef = 03CE93C424325B8E0025A1EB /* Snapfile */; };
 		03CE93FB24325C200025A1EB /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 03CE93FA24325C200025A1EB /* Podfile */; };
 		CCDF095F90250E7DDAF2F00A /* Pods_LitterBoxUser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ABB787F4B97B34236ADF7A9 /* Pods_LitterBoxUser.framework */; };
 /* End PBXBuildFile section */
@@ -129,59 +76,6 @@
 		03CE9372242F9E4D0025A1EB /* LitterTrip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LitterTrip.swift; sourceTree = "<group>"; };
 		03CE9384243222EB0025A1EB /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapshotHelper.swift; path = fastlane/SnapshotHelper.swift; sourceTree = SOURCE_ROOT; };
 		03CE938624322CA90025A1EB /* Just Testing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Just Testing.swift"; sourceTree = "<group>"; };
-		03CE938B24325B8E0025A1EB /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
-		03CE938D24325B8E0025A1EB /* iPhone 11 Pro-01Cats.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone 11 Pro-01Cats.png"; sourceTree = "<group>"; };
-		03CE938E24325B8E0025A1EB /* iPhone 11 Pro-03LitterTrips.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone 11 Pro-03LitterTrips.png"; sourceTree = "<group>"; };
-		03CE938F24325B8E0025A1EB /* iPhone 11 Pro-04LitterTripDetail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone 11 Pro-04LitterTripDetail.png"; sourceTree = "<group>"; };
-		03CE939024325B8E0025A1EB /* iPhone 11 Pro-02CatDetail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone 11 Pro-02CatDetail.png"; sourceTree = "<group>"; };
-		03CE939124325B8E0025A1EB /* screenshots.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = screenshots.html; sourceTree = "<group>"; };
-		03CE939224325B8E0025A1EB /* Pluginfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Pluginfile; sourceTree = "<group>"; };
-		03CE939324325B8E0025A1EB /* Appfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Appfile; sourceTree = "<group>"; };
-		03CE939424325B8E0025A1EB /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = "<group>"; };
-		03CE939524325B8E0025A1EB /* Deliverfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Deliverfile; sourceTree = "<group>"; };
-		03CE939624325B8E0025A1EB /* Fastfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Fastfile; sourceTree = "<group>"; };
-		03CE939724325B8E0025A1EB /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		03CE939824325B8E0025A1EB /* Matchfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Matchfile; sourceTree = "<group>"; };
-		03CE939A24325B8E0025A1EB /* copyright.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = copyright.txt; sourceTree = "<group>"; };
-		03CE939C24325B8E0025A1EB /* phone_number.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = phone_number.txt; sourceTree = "<group>"; };
-		03CE939D24325B8E0025A1EB /* address_line1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = address_line1.txt; sourceTree = "<group>"; };
-		03CE939E24325B8E0025A1EB /* country.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = country.txt; sourceTree = "<group>"; };
-		03CE939F24325B8E0025A1EB /* city_name.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = city_name.txt; sourceTree = "<group>"; };
-		03CE93A024325B8E0025A1EB /* address_line3.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = address_line3.txt; sourceTree = "<group>"; };
-		03CE93A124325B8E0025A1EB /* address_line2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = address_line2.txt; sourceTree = "<group>"; };
-		03CE93A224325B8E0025A1EB /* trade_name.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = trade_name.txt; sourceTree = "<group>"; };
-		03CE93A324325B8E0025A1EB /* email_address.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = email_address.txt; sourceTree = "<group>"; };
-		03CE93A424325B8E0025A1EB /* is_displayed_on_app_store.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = is_displayed_on_app_store.txt; sourceTree = "<group>"; };
-		03CE93A524325B8E0025A1EB /* last_name.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = last_name.txt; sourceTree = "<group>"; };
-		03CE93A624325B8E0025A1EB /* postal_code.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = postal_code.txt; sourceTree = "<group>"; };
-		03CE93A724325B8E0025A1EB /* first_name.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = first_name.txt; sourceTree = "<group>"; };
-		03CE93A824325B8E0025A1EB /* state.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = state.txt; sourceTree = "<group>"; };
-		03CE93A924325B8E0025A1EB /* app_store_rating_config.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = app_store_rating_config.json; sourceTree = "<group>"; };
-		03CE93AA24325B8E0025A1EB /* secondary_first_sub_category.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = secondary_first_sub_category.txt; sourceTree = "<group>"; };
-		03CE93AB24325B8E0025A1EB /* secondary_category.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = secondary_category.txt; sourceTree = "<group>"; };
-		03CE93AC24325B8E0025A1EB /* secondary_second_sub_category.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = secondary_second_sub_category.txt; sourceTree = "<group>"; };
-		03CE93AD24325B8E0025A1EB /* primary_second_sub_category.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = primary_second_sub_category.txt; sourceTree = "<group>"; };
-		03CE93AF24325B8E0025A1EB /* phone_number.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = phone_number.txt; sourceTree = "<group>"; };
-		03CE93B024325B8E0025A1EB /* demo_user.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = demo_user.txt; sourceTree = "<group>"; };
-		03CE93B124325B8E0025A1EB /* notes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = notes.txt; sourceTree = "<group>"; };
-		03CE93B224325B8E0025A1EB /* email_address.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = email_address.txt; sourceTree = "<group>"; };
-		03CE93B324325B8E0025A1EB /* last_name.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = last_name.txt; sourceTree = "<group>"; };
-		03CE93B424325B8E0025A1EB /* first_name.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = first_name.txt; sourceTree = "<group>"; };
-		03CE93B524325B8E0025A1EB /* demo_password.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = demo_password.txt; sourceTree = "<group>"; };
-		03CE93B624325B8E0025A1EB /* primary_first_sub_category.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = primary_first_sub_category.txt; sourceTree = "<group>"; };
-		03CE93B824325B8E0025A1EB /* privacy_url.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = privacy_url.txt; sourceTree = "<group>"; };
-		03CE93B924325B8E0025A1EB /* subtitle.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = subtitle.txt; sourceTree = "<group>"; };
-		03CE93BA24325B8E0025A1EB /* support_url.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = support_url.txt; sourceTree = "<group>"; };
-		03CE93BB24325B8E0025A1EB /* keywords.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = keywords.txt; sourceTree = "<group>"; };
-		03CE93BC24325B8E0025A1EB /* apple_tv_privacy_policy.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = apple_tv_privacy_policy.txt; sourceTree = "<group>"; };
-		03CE93BD24325B8E0025A1EB /* promotional_text.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = promotional_text.txt; sourceTree = "<group>"; };
-		03CE93BE24325B8E0025A1EB /* release_notes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = release_notes.txt; sourceTree = "<group>"; };
-		03CE93BF24325B8E0025A1EB /* name.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = name.txt; sourceTree = "<group>"; };
-		03CE93C024325B8E0025A1EB /* marketing_url.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = marketing_url.txt; sourceTree = "<group>"; };
-		03CE93C124325B8E0025A1EB /* description.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = description.txt; sourceTree = "<group>"; };
-		03CE93C224325B8E0025A1EB /* primary_category.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = primary_category.txt; sourceTree = "<group>"; };
-		03CE93C324325B8E0025A1EB /* report.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = report.xml; sourceTree = "<group>"; };
-		03CE93C424325B8E0025A1EB /* Snapfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Snapfile; sourceTree = "<group>"; };
 		03CE93FA24325C200025A1EB /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		3DF5F38E39499B57101B2D8F /* Pods-LitterBoxUser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LitterBoxUser.debug.xcconfig"; path = "Target Support Files/Pods-LitterBoxUser/Pods-LitterBoxUser.debug.xcconfig"; sourceTree = "<group>"; };
 		6ABB787F4B97B34236ADF7A9 /* Pods_LitterBoxUser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LitterBoxUser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -230,7 +124,6 @@
 		03CE9324242F8CB60025A1EB /* LitterBoxUser */ = {
 			isa = PBXGroup;
 			children = (
-				03CE938924325B8E0025A1EB /* fastlane */,
 				03CE936D242F9E080025A1EB /* Session */,
 				03CE936A242F9DDC0025A1EB /* Controllers */,
 				03CE9365242F9D860025A1EB /* Components */,
@@ -323,114 +216,6 @@
 				03CE936E242F9E1B0025A1EB /* FirebaseSession.swift */,
 			);
 			path = Session;
-			sourceTree = "<group>";
-		};
-		03CE938924325B8E0025A1EB /* fastlane */ = {
-			isa = PBXGroup;
-			children = (
-				03CE938A24325B8E0025A1EB /* screenshots */,
-				03CE939224325B8E0025A1EB /* Pluginfile */,
-				03CE939324325B8E0025A1EB /* Appfile */,
-				03CE939424325B8E0025A1EB /* SnapshotHelper.swift */,
-				03CE939524325B8E0025A1EB /* Deliverfile */,
-				03CE939624325B8E0025A1EB /* Fastfile */,
-				03CE939724325B8E0025A1EB /* README.md */,
-				03CE939824325B8E0025A1EB /* Matchfile */,
-				03CE939924325B8E0025A1EB /* metadata */,
-				03CE93C324325B8E0025A1EB /* report.xml */,
-				03CE93C424325B8E0025A1EB /* Snapfile */,
-			);
-			path = fastlane;
-			sourceTree = SOURCE_ROOT;
-		};
-		03CE938A24325B8E0025A1EB /* screenshots */ = {
-			isa = PBXGroup;
-			children = (
-				03CE938B24325B8E0025A1EB /* README.txt */,
-				03CE938C24325B8E0025A1EB /* en-US */,
-				03CE939124325B8E0025A1EB /* screenshots.html */,
-			);
-			path = screenshots;
-			sourceTree = "<group>";
-		};
-		03CE938C24325B8E0025A1EB /* en-US */ = {
-			isa = PBXGroup;
-			children = (
-				03CE938D24325B8E0025A1EB /* iPhone 11 Pro-01Cats.png */,
-				03CE938E24325B8E0025A1EB /* iPhone 11 Pro-03LitterTrips.png */,
-				03CE938F24325B8E0025A1EB /* iPhone 11 Pro-04LitterTripDetail.png */,
-				03CE939024325B8E0025A1EB /* iPhone 11 Pro-02CatDetail.png */,
-			);
-			path = "en-US";
-			sourceTree = "<group>";
-		};
-		03CE939924325B8E0025A1EB /* metadata */ = {
-			isa = PBXGroup;
-			children = (
-				03CE939A24325B8E0025A1EB /* copyright.txt */,
-				03CE939B24325B8E0025A1EB /* trade_representative_contact_information */,
-				03CE93A924325B8E0025A1EB /* app_store_rating_config.json */,
-				03CE93AA24325B8E0025A1EB /* secondary_first_sub_category.txt */,
-				03CE93AB24325B8E0025A1EB /* secondary_category.txt */,
-				03CE93AC24325B8E0025A1EB /* secondary_second_sub_category.txt */,
-				03CE93AD24325B8E0025A1EB /* primary_second_sub_category.txt */,
-				03CE93AE24325B8E0025A1EB /* review_information */,
-				03CE93B624325B8E0025A1EB /* primary_first_sub_category.txt */,
-				03CE93B724325B8E0025A1EB /* en-US */,
-				03CE93C224325B8E0025A1EB /* primary_category.txt */,
-			);
-			path = metadata;
-			sourceTree = "<group>";
-		};
-		03CE939B24325B8E0025A1EB /* trade_representative_contact_information */ = {
-			isa = PBXGroup;
-			children = (
-				03CE939C24325B8E0025A1EB /* phone_number.txt */,
-				03CE939D24325B8E0025A1EB /* address_line1.txt */,
-				03CE939E24325B8E0025A1EB /* country.txt */,
-				03CE939F24325B8E0025A1EB /* city_name.txt */,
-				03CE93A024325B8E0025A1EB /* address_line3.txt */,
-				03CE93A124325B8E0025A1EB /* address_line2.txt */,
-				03CE93A224325B8E0025A1EB /* trade_name.txt */,
-				03CE93A324325B8E0025A1EB /* email_address.txt */,
-				03CE93A424325B8E0025A1EB /* is_displayed_on_app_store.txt */,
-				03CE93A524325B8E0025A1EB /* last_name.txt */,
-				03CE93A624325B8E0025A1EB /* postal_code.txt */,
-				03CE93A724325B8E0025A1EB /* first_name.txt */,
-				03CE93A824325B8E0025A1EB /* state.txt */,
-			);
-			path = trade_representative_contact_information;
-			sourceTree = "<group>";
-		};
-		03CE93AE24325B8E0025A1EB /* review_information */ = {
-			isa = PBXGroup;
-			children = (
-				03CE93AF24325B8E0025A1EB /* phone_number.txt */,
-				03CE93B024325B8E0025A1EB /* demo_user.txt */,
-				03CE93B124325B8E0025A1EB /* notes.txt */,
-				03CE93B224325B8E0025A1EB /* email_address.txt */,
-				03CE93B324325B8E0025A1EB /* last_name.txt */,
-				03CE93B424325B8E0025A1EB /* first_name.txt */,
-				03CE93B524325B8E0025A1EB /* demo_password.txt */,
-			);
-			path = review_information;
-			sourceTree = "<group>";
-		};
-		03CE93B724325B8E0025A1EB /* en-US */ = {
-			isa = PBXGroup;
-			children = (
-				03CE93B824325B8E0025A1EB /* privacy_url.txt */,
-				03CE93B924325B8E0025A1EB /* subtitle.txt */,
-				03CE93BA24325B8E0025A1EB /* support_url.txt */,
-				03CE93BB24325B8E0025A1EB /* keywords.txt */,
-				03CE93BC24325B8E0025A1EB /* apple_tv_privacy_policy.txt */,
-				03CE93BD24325B8E0025A1EB /* promotional_text.txt */,
-				03CE93BE24325B8E0025A1EB /* release_notes.txt */,
-				03CE93BF24325B8E0025A1EB /* name.txt */,
-				03CE93C024325B8E0025A1EB /* marketing_url.txt */,
-				03CE93C124325B8E0025A1EB /* description.txt */,
-			);
-			path = "en-US";
 			sourceTree = "<group>";
 		};
 		BA33AB88BB4CD81D913330C6 /* Frameworks */ = {
@@ -535,62 +320,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03CE93D724325B8E0025A1EB /* address_line3.txt in Resources */,
-				03CE93CF24325B8E0025A1EB /* Fastfile in Resources */,
-				03CE93D424325B8E0025A1EB /* address_line1.txt in Resources */,
-				03CE93C824325B8E0025A1EB /* iPhone 11 Pro-04LitterTripDetail.png in Resources */,
-				03CE93D524325B8E0025A1EB /* country.txt in Resources */,
-				03CE93DB24325B8F0025A1EB /* is_displayed_on_app_store.txt in Resources */,
 				03CE9332242F8CB70025A1EB /* LaunchScreen.storyboard in Resources */,
-				03CE93DD24325B8F0025A1EB /* postal_code.txt in Resources */,
-				03CE93DC24325B8F0025A1EB /* last_name.txt in Resources */,
 				03CE93FB24325C200025A1EB /* Podfile in Resources */,
-				03CE93D824325B8E0025A1EB /* address_line2.txt in Resources */,
-				03CE93E424325B8F0025A1EB /* primary_second_sub_category.txt in Resources */,
-				03CE93E524325B8F0025A1EB /* phone_number.txt in Resources */,
-				03CE93F224325B8F0025A1EB /* promotional_text.txt in Resources */,
-				03CE93E824325B8F0025A1EB /* email_address.txt in Resources */,
-				03CE93E724325B8F0025A1EB /* notes.txt in Resources */,
-				03CE93EB24325B8F0025A1EB /* demo_password.txt in Resources */,
-				03CE93EA24325B8F0025A1EB /* first_name.txt in Resources */,
-				03CE93E024325B8F0025A1EB /* app_store_rating_config.json in Resources */,
-				03CE93F724325B8F0025A1EB /* primary_category.txt in Resources */,
-				03CE93C624325B8E0025A1EB /* iPhone 11 Pro-01Cats.png in Resources */,
-				03CE93D624325B8E0025A1EB /* city_name.txt in Resources */,
 				03CE932F242F8CB70025A1EB /* Preview Assets.xcassets in Resources */,
 				03CE934B242F9A500025A1EB /* GoogleService-Info.plist in Resources */,
-				03CE93D024325B8E0025A1EB /* README.md in Resources */,
-				03CE93CA24325B8E0025A1EB /* screenshots.html in Resources */,
-				03CE93CE24325B8E0025A1EB /* Deliverfile in Resources */,
-				03CE93E324325B8F0025A1EB /* secondary_second_sub_category.txt in Resources */,
-				03CE93ED24325B8F0025A1EB /* privacy_url.txt in Resources */,
-				03CE93D124325B8E0025A1EB /* Matchfile in Resources */,
-				03CE93EF24325B8F0025A1EB /* support_url.txt in Resources */,
-				03CE93C924325B8E0025A1EB /* iPhone 11 Pro-02CatDetail.png in Resources */,
-				03CE93D324325B8E0025A1EB /* phone_number.txt in Resources */,
-				03CE93EE24325B8F0025A1EB /* subtitle.txt in Resources */,
-				03CE93F524325B8F0025A1EB /* marketing_url.txt in Resources */,
-				03CE93DA24325B8F0025A1EB /* email_address.txt in Resources */,
-				03CE93E124325B8F0025A1EB /* secondary_first_sub_category.txt in Resources */,
-				03CE93F024325B8F0025A1EB /* keywords.txt in Resources */,
-				03CE93F124325B8F0025A1EB /* apple_tv_privacy_policy.txt in Resources */,
-				03CE93C524325B8E0025A1EB /* README.txt in Resources */,
-				03CE93CB24325B8E0025A1EB /* Pluginfile in Resources */,
-				03CE93CC24325B8E0025A1EB /* Appfile in Resources */,
-				03CE93F924325B8F0025A1EB /* Snapfile in Resources */,
-				03CE93F324325B8F0025A1EB /* release_notes.txt in Resources */,
-				03CE93C724325B8E0025A1EB /* iPhone 11 Pro-03LitterTrips.png in Resources */,
-				03CE93F624325B8F0025A1EB /* description.txt in Resources */,
-				03CE93DE24325B8F0025A1EB /* first_name.txt in Resources */,
-				03CE93D924325B8F0025A1EB /* trade_name.txt in Resources */,
-				03CE93DF24325B8F0025A1EB /* state.txt in Resources */,
-				03CE93E624325B8F0025A1EB /* demo_user.txt in Resources */,
-				03CE93E924325B8F0025A1EB /* last_name.txt in Resources */,
-				03CE93F424325B8F0025A1EB /* name.txt in Resources */,
-				03CE93E224325B8F0025A1EB /* secondary_category.txt in Resources */,
-				03CE93EC24325B8F0025A1EB /* primary_first_sub_category.txt in Resources */,
-				03CE93F824325B8F0025A1EB /* report.xml in Resources */,
-				03CE93D224325B8E0025A1EB /* copyright.txt in Resources */,
 				03CE932C242F8CB70025A1EB /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -673,7 +406,6 @@
 				03CE9373242F9E4D0025A1EB /* LitterTrip.swift in Sources */,
 				03CE935A242F9CAB0025A1EB /* SignUp.swift in Sources */,
 				03CE9360242F9D1E0025A1EB /* LitterTripsView.swift in Sources */,
-				03CE93CD24325B8E0025A1EB /* SnapshotHelper.swift in Sources */,
 				03CE935E242F9CE10025A1EB /* CatRowView.swift in Sources */,
 				03CE9353242F9BC00025A1EB /* User.swift in Sources */,
 				03CE9369242F9DB70025A1EB /* CustomButton.swift in Sources */,
@@ -774,7 +506,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -828,7 +560,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -843,7 +575,8 @@
 			baseConfigurationReference = 3DF5F38E39499B57101B2D8F /* Pods-LitterBoxUser.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_ASSET_PATHS = "\"LitterBoxUser/Preview Content\"";
 				DEVELOPMENT_TEAM = DAV93N6F9B;
 				ENABLE_PREVIEWS = YES;
@@ -854,6 +587,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.harebrained-apps.litterboxuser";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "match AdHoc com.harebrained-apps.litterboxuser";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -864,7 +598,8 @@
 			baseConfigurationReference = A3CBD3E645A215AB905FAE39 /* Pods-LitterBoxUser.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_ASSET_PATHS = "\"LitterBoxUser/Preview Content\"";
 				DEVELOPMENT_TEAM = DAV93N6F9B;
 				ENABLE_PREVIEWS = YES;
@@ -875,6 +610,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.harebrained-apps.litterboxuser";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "match AdHoc com.harebrained-apps.litterboxuser";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

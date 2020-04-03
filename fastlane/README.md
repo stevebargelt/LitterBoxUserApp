@@ -24,11 +24,41 @@ Take screenshots
 ----
 
 ## iOS
+### ios certificates
+```
+fastlane ios certificates
+```
+
+### ios bump_build_version
+```
+fastlane ios bump_build_version
+```
+
+### ios matchregister
+```
+fastlane ios matchregister
+```
+
+### ios build
+```
+fastlane ios build
+```
+
+### ios appcenterdist
+```
+fastlane ios appcenterdist
+```
+
+### ios firebasedist
+```
+fastlane ios firebasedist
+```
+
 ### ios alpha
 ```
 fastlane ios alpha
 ```
-Firebase Alpha Distribuiton
+Alpha Distribution
 ### ios screenshot
 ```
 fastlane ios screenshot

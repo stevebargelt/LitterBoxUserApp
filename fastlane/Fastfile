@@ -4,39 +4,62 @@ update_fastlane
 default_platform(:ios)
 
 platform :ios do
-  
-#  desc "Create app on Apple Developer and App Store Connect sites"
-#  lane :create_app do
-#    produce
-#  end
 
   lane :certificates do
-    match(type: "development", readonly: true)
-    # match(app_identifier: ["com.harebrained-apps.litterboxuser", "com.harebrained-apps.litterboxuser.staging"], readonly: true)
+    # match(type: "development", readonly: true)
+    match(app_identifier: "com.harebrained-apps.litterboxuser", readonly: true)
   end
 
-  lane :register do
+  lane :bump_build_version do
+    increment_build_number(xcodeproj: './LitterBoxUser.xcodeproj')
+    commit_version_bump(message: 'Bump iOS build', xcodeproj: './LitterBoxUser.xcodeproj')
+    git_pull
+    push_to_git_remote
+  end
+
+  lane :matchregister do
     register_devices(devices_file: "./fastlane/devices.txt")
     match(type: "adhoc", force_for_new_devices: true)
   end
 
-  lane :justMatch do
-    match(type: "adhoc", force_for_new_devices: true)
+  lane :build do
+    # build_app(workspace: "LitterBoxUser.xcworkspace", scheme: "LitterBoxUser")
+  end
+  
+  lane :appcenterdist do
+    appcenter_upload(
+      api_token: ENV["APPCENTER_API_TOKEN"],
+      owner_name: ENV["APPCENTER_OWNER_NAME"],
+      owner_type: ENV["APPCENTER_OWNER_TYPE"],
+      app_name: ENV["APPCENTER_APP_NAME_IOS"],
+      ipa: ENV["IPA_PATH"],
+      destination_type: "group",
+      destinations: "Alpha Testers",
+      notify_testers: true
+    )
   end
 
-  desc "Firebase Alpha Distribution"
+  lane :firebasedist do
+    # firebase_app_distribution(
+    #   app: "1:46225580206:ios:8e8060d41c0762ca3d0d3f",
+    #   testers: "steve@bargelt.com, steven.bargelt@pse.com",
+    #   release_notes: "Lots of amazing new features to test out!",
+    # )
+  end
+
+  desc "Alpha Distribution"
   lane :alpha do
     #ensure_git_status_clean
-    increment_build_number
-    # sh("curl", ""https://api.ciscospark.com/v1/webhooks/incoming/Y2lzY29zcGFyazovL3VzL1dFQkhPT0svZmE5OTU0NTQtNjJmZi00MzU2LTljM2YtZWMwZTMwOWFjMTRh"", "-X", "POST", -H "Content-Type: application/json", -d "'{"text" : "This is a message from a Cisco Webex Teams incoming webhook."}'")
-
+    #matchregister
     match(type: "adhoc")
-    build_app(workspace: "LitterBoxUser.xcworkspace", scheme: "LitterBoxUser")
-    firebase_app_distribution(
-      app: "1:46225580206:ios:8e8060d41c0762ca3d0d3f",
-      testers: "steve@bargelt.com, steven.bargelt@pse.com",
-      release_notes: "Lots of amazing new features to test out!",
+    gym(
+      scheme: "LitterBoxUser", 
+      clean: true, 
+      workspace: "./LitterBoxUser.xcworkspace", 
+      export_method: "ad-hoc", 
+      output_directory: "./builds"
     )
+    appcenterdist
   end
 
   desc "Take screenshots"

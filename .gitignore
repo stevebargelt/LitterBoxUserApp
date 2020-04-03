@@ -58,3 +58,5 @@ fastlane/test_output
 
 GoogleService-Info.plist
 devices.txt
+env.txt
+.env.default
