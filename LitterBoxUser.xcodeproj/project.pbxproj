@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0399CBD1243E08DA009BD907 /* RootTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0399CBD0243E08DA009BD907 /* RootTabView.swift */; };
+		0399CBD3243E0AC1009BD907 /* LitterTripsAllCats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0399CBD2243E0AC1009BD907 /* LitterTripsAllCats.swift */; };
 		03CE9326242F8CB60025A1EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CE9325242F8CB60025A1EB /* AppDelegate.swift */; };
 		03CE9328242F8CB60025A1EB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CE9327242F8CB60025A1EB /* SceneDelegate.swift */; };
 		03CE932A242F8CB60025A1EB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CE9329242F8CB60025A1EB /* ContentView.swift */; };
@@ -47,6 +49,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0399CBD0243E08DA009BD907 /* RootTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabView.swift; sourceTree = "<group>"; };
+		0399CBD2243E0AC1009BD907 /* LitterTripsAllCats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LitterTripsAllCats.swift; sourceTree = "<group>"; };
 		03CE9322242F8CB60025A1EB /* LitterBoxUser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LitterBoxUser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03CE9325242F8CB60025A1EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03CE9327242F8CB60025A1EB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -189,6 +193,8 @@
 				03CE935F242F9D1E0025A1EB /* LitterTripsView.swift */,
 				03CE9361242F9D420025A1EB /* LitterTripDetailView.swift */,
 				03CE9363242F9D6E0025A1EB /* FirebaseImageView.swift */,
+				0399CBD0243E08DA009BD907 /* RootTabView.swift */,
+				0399CBD2243E0AC1009BD907 /* LitterTripsAllCats.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -408,9 +414,11 @@
 				03CE9360242F9D1E0025A1EB /* LitterTripsView.swift in Sources */,
 				03CE935E242F9CE10025A1EB /* CatRowView.swift in Sources */,
 				03CE9353242F9BC00025A1EB /* User.swift in Sources */,
+				0399CBD3243E0AC1009BD907 /* LitterTripsAllCats.swift in Sources */,
 				03CE9369242F9DB70025A1EB /* CustomButton.swift in Sources */,
 				03CE936F242F9E1B0025A1EB /* FirebaseSession.swift in Sources */,
 				03CE9356242F9C3F0025A1EB /* CatDetailView.swift in Sources */,
+				0399CBD1243E08DA009BD907 /* RootTabView.swift in Sources */,
 				03CE9364242F9D6E0025A1EB /* FirebaseImageView.swift in Sources */,
 				03CE936C242F9DEE0025A1EB /* ImagePickerController.swift in Sources */,
 				03CE9326242F8CB60025A1EB /* AppDelegate.swift in Sources */,

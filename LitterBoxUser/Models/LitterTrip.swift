@@ -14,6 +14,7 @@ import FirebaseStorage
 struct LitterTrip : Codable, Identifiable {
     
     @DocumentID var id: String?
+    var CatName: String
     var Probability: Float
     var Direction: String
     var DirectionProbability: Float
@@ -22,7 +23,7 @@ struct LitterTrip : Codable, Identifiable {
     
     var formattedTimestamp:String{
         let df = DateFormatter()
-        df.dateFormat = "yyy-MM-dd hh:mm:ss"
+        df.dateFormat = "yyy-MM-dd hh:mm"
         return df.string(from: (timestamp?.dateValue())!)
     }
     
@@ -42,12 +43,13 @@ struct LitterTrip : Codable, Identifiable {
         return "\(parts[2])/\(parts[3])"
     }
     
-    init(Probability: Float = 0,
+    init(CatName: String = "",
+         Probability: Float = 0,
          Direction: String = "",
          DirectionProbability: Float = 0,
          Photo: String = "",
          timestamp: Timestamp? = nil) {
-        
+            self.CatName = CatName
             self.Probability = Probability
             self.Direction = Direction
             self.DirectionProbability = DirectionProbability

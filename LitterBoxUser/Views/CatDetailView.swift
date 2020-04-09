@@ -76,7 +76,7 @@ struct CatDetailView: View {
 struct CatDetailView_Previews: PreviewProvider {
     static var previews: some View {
         CatDetailView(cat: Cat(name: "TestBear", color: "Black", age: 7,
-                               photo: "gs://mycats-ba2ef.appspot.com/catimages/Bear",
+                               photo: "https://firebasestorage.googleapis.com/v0/b/mycats-ba2ef.appspot.com/o/catimages%2FBear?alt=media&token=f71e720c-4308-4a82-9d25-48febc5f5b7e",
                                createdTime: nil))
     }
 }

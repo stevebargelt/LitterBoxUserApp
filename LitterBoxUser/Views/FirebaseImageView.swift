@@ -60,8 +60,8 @@ class DataLoader: ObservableObject {
     }
 }
 
-//struct FirebaseImageView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        FirebaseImageView()
-//    }
-//}
+struct FirebaseImageView_Previews: PreviewProvider {
+    static var previews: some View {
+        FirebaseImageView(imageURL: "https://firebasestorage.googleapis.com/v0/b/mycats-ba2ef.appspot.com/o/catimages%2FBear?alt=media&token=f71e720c-4308-4a82-9d25-48febc5f5b7e", width: 50, height: 50)
+   }
+}
