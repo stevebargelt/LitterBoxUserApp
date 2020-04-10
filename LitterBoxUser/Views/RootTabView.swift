@@ -21,8 +21,6 @@ struct RootTabView: View {
                     Image(systemName: "tray.and.arrow.down")
                     Text("Litter Trips")
             }
-        //.accentColor(Color("B1"))
-
         }
     }
 }

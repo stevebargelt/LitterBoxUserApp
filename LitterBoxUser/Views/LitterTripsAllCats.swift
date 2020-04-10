@@ -34,10 +34,9 @@ struct LitterTripsAllCatsView: View {
                     }
                 }
             }
+            .navigationBarTitle(Text("Litter Trips"))
             .padding()
         }
-        .navigationBarHidden(true)
-        //.navigationBarTitle(Text("Litter Trips"))
         .onAppear {
             self.getLitterTrips()
         }
@@ -47,7 +46,7 @@ struct LitterTripsAllCatsView: View {
     func getLitterTrips() {
         // Remove previously data to prevent duplicate data
         self.litterTrips.removeAll()
-        self.db.collection("test2")
+        self.db.collection("litterTrips")
             .order(by: "timestamp", descending: true)
             .limit(to: 25)
             .addSnapshotListener { (querySnapshot, err) in
@@ -62,38 +61,6 @@ struct LitterTripsAllCatsView: View {
         }
       }
     
-//    //TODO: we need to rearrange data to be flat... this is not the way we want to do this
-//    //TODO: and should be a snapshot listener to auto update
-//    func getLitterTrips2() {
-//        // Remove previously data to prevent duplicate data
-//        self.litterTrips.removeAll()
-//        self.db.collection("test").getDocuments{ (querySnapshot, err) in
-//            if let err = err {
-//                print("Error getting documents: \(err)")
-//            } else {
-//                for document in querySnapshot!.documents {
-//                    document.collection("LitterTrips")
-//                        .order(by: "timestamp", descending: true)
-//                        .getDocuments{ (querySnapshot2, err2) in
-//                        
-//                        }
-//                }
-//                }
-//        }
-//    }
-//            .document(self.cat.id!).collection("LitterTrips")
-//            .order(by: "timestamp", descending: true)
-//        .addSnapshotListener { (querySnapshot, err) in
-//            if let err = err {
-//                print("Error getting documents \(err)")
-//            }
-//            if let querySnapshot = querySnapshot {
-//                self.litterTrips = querySnapshot.documents.compactMap { document -> LitterTrip? in
-//                    try? document.data(as: LitterTrip.self)
-//            }
-//          }
-//        }
-//      }
         
 }
 

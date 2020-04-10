@@ -42,6 +42,11 @@ struct ContentView: View {
                         .navigationBarItems(trailing: profileButton)
                         .sheet(isPresented: $showingProfile) {
                             Text("User Profile")
+                            CustomButton(
+                                label: "Sign Out",
+                                action: self.session.logOut
+                                )
+                                .padding()
                         }
                     }
                 } else {
@@ -68,7 +73,6 @@ struct ContentView: View {
     func delete(at offsets: IndexSet){
         session.cats.remove(atOffsets: offsets)
     }
-        
 }
 
 struct ContentView_Previews: PreviewProvider {

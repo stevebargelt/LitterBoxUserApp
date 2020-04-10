@@ -35,9 +35,9 @@ struct LitterTripsView: View {
                     }
                 }
             }
+            .navigationBarTitle(Text("Litter Trips"), displayMode: .inline)
             .padding()
         }
-        .navigationBarTitle(Text("Litter Trips"), displayMode: .inline)
         .onAppear {
             self.getLitterTrips()
         }
@@ -46,8 +46,10 @@ struct LitterTripsView: View {
     func getLitterTrips() {
         // Remove previously data to prevent duplicate data
         self.litterTrips.removeAll()
-        self.db.collection("test").document(self.cat.id!).collection("LitterTrips")
+        self.db.collection("litterTrips")
+            .whereField("CatName", isEqualTo: self.cat.name)
             .order(by: "timestamp", descending: true)
+        .limit(to: 30)
         .addSnapshotListener { (querySnapshot, err) in
             if let err = err {
                 print("Error getting documents \(err)")

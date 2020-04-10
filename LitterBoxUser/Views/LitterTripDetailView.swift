@@ -26,22 +26,6 @@ struct LitterTripDetailView: View {
                 Spacer()
                 Text("Photo Path \(litterTrip.photoPath)")
                 FirebaseImageView(imageURL: imageURL, width: 400, height: 400)
-//                WebImage(url: URL(string: litterTrip.photoURL ))
-//                    .onSuccess { image, cacheType in
-//                        // Success
-//                    }
-//                    .resizable() // Resizable like SwiftUI.Image, you must use this modifier or the view will use the image bitmap size
-//                    .placeholder(Image(systemName: "photo")) // Placeholder Image
-//                    // Supports ViewBuilder as well
-//                    .placeholder {
-//                        Rectangle().foregroundColor(.gray)
-//                    }
-//                    .indicator(.activity) // Activity Indicator
-//                    .animation(.easeInOut(duration: 0.5)) // Animation Duration
-//                    .transition(.fade) // Fade Transition
-//                    .scaledToFit()
-//                    .frame(width: 300, height: 300, alignment: .center)
-                
 //                Button(action: {
 //                    self.buttonPressed()
 //                }) {
