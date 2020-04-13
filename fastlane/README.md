@@ -29,9 +29,14 @@ Take screenshots
 fastlane ios certificates
 ```
 
-### ios bump_build_version
+### ios bump_build_minor_version
 ```
-fastlane ios bump_build_version
+fastlane ios bump_build_minor_version
+```
+
+### ios bump_build_major_version
+```
+fastlane ios bump_build_major_version
 ```
 
 ### ios matchregister
