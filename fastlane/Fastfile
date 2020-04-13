@@ -10,8 +10,15 @@ platform :ios do
     match(app_identifier: "com.harebrained-apps.litterboxuser", readonly: true)
   end
 
-  lane :bump_build_version do
-    increment_build_number(xcodeproj: './LitterBoxUser.xcodeproj')
+  lane :bump_build_minor_version do
+    increment_version_number(bump_type: "minor")
+    commit_version_bump(message: 'Bump iOS build minor version')
+    git_pull
+    push_to_git_remote
+  end
+
+  lane :bump_build_major_version do
+    increment_version_number(bump_type: "major")
     commit_version_bump(message: 'Bump iOS build', xcodeproj: './LitterBoxUser.xcodeproj')
     git_pull
     push_to_git_remote
@@ -51,6 +58,7 @@ platform :ios do
   lane :alpha do
     #ensure_git_status_clean
     #matchregister
+    bump_build_minor_version
     match(type: "adhoc")
     gym(
       scheme: "LitterBoxUser", 
@@ -69,6 +77,7 @@ platform :ios do
 
   desc "Push a new beta build to TestFlight"
   lane :beta do
+    bump_build_minor_version
     build_app(workspace: "LitterBoxUser.xcworkspace", scheme: "LitterBoxUser")
     upload_to_testflight
   end
