@@ -56,7 +56,7 @@ platform :ios do
 
   desc "Alpha Distribution"
   lane :alpha do
-    #ensure_git_status_clean
+    ensure_git_status_clean
     #matchregister
     bump_build_minor_version
     match(type: "adhoc")
@@ -78,13 +78,8 @@ platform :ios do
   desc "Push a new beta build to TestFlight"
   lane :beta do
     bump_build_minor_version
+    screenshot
     build_app(workspace: "LitterBoxUser.xcworkspace", scheme: "LitterBoxUser")
     upload_to_testflight
   end
 end
-
-
-desc "Take screenshots"
-  lane :screenshot do
-    snapshot
-  end
