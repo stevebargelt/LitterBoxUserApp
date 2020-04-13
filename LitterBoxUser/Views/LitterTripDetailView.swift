@@ -11,9 +11,9 @@ import FirebaseStorage
 
 struct LitterTripDetailView: View {
       
-    var litterTrip: LitterTrip
+    @State var litterTrip: LitterTrip
     @State var imageURL = ""
-    
+     
     var body: some View {
         
         HStack(alignment: .center, spacing: 20) {
@@ -21,23 +21,22 @@ struct LitterTripDetailView: View {
                 Text("When: \(litterTrip.formattedTimestamp)")
                 Text("Probability \(litterTrip.formattedProbability)")
                 Spacer()
-                Text("Direction \(litterTrip.Direction)")
+                HStack {
+                    Text("Direction \(litterTrip.Direction)")
+                    Button(action: {
+                        self.buttonPressed()
+                    }) {
+                        if litterTrip.Direction == "in" {
+                            Image(systemName: "tray.and.arrow.down.fill").imageScale(.medium)
+                        } else {
+                            Image(systemName: "tray.and.arrow.up.fill").imageScale(.medium)
+                        }
+                    }
+                }
                 Text("Dir Probability \(litterTrip.formattedDirectionProbability)")
                 Spacer()
                 Text("Photo Path \(litterTrip.photoPath)")
                 FirebaseImageView(imageURL: imageURL, width: 400, height: 400)
-//                Button(action: {
-//                    self.buttonPressed()
-//                }) {
-//                    if self.complete == true {
-//                        Image(systemName: "checkmark").imageScale(.medium)
-//                    } else {
-//                        Image(systemName: "xmark").imageScale(.medium)
-//                    }
-//                }
-//                .onAppear() {
-//                    self.setupButton()
-//                }
             }
             .padding()
             .onAppear(perform: loadImageFromFirebase)
@@ -56,25 +55,16 @@ struct LitterTripDetailView: View {
         }
     }
     
-//    func setupButton() {
-//        if cat.isComplete == "true" {
-//            complete = true
-//        } else {
-//            complete = false
-//        }
-//    }
-//
-//    func buttonPressed() {
-//        if complete == true {
-//            self.complete = false
-//            self.session.updateTODO(key: todo.key, todo: todo.todo, isComplete: "false")
-//            print("buttonpressed ran, should set complete, complete is: \(String(describing: self.complete))")
-//        } else {
-//            self.complete = true
-//            self.session.updateTODO(key: todo.key, todo: todo.todo, isComplete: "true")
-//            print("buttonpressed ran, should set incomplete, complete is \(String(describing: self.complete))")
-//        }
-//    }
+
+    func buttonPressed() {
+        if litterTrip.Direction == "in" {
+            litterTrip.Direction = "out"
+            litterTrip.update(litterTrip)
+        } else {
+            litterTrip.Direction = "in"
+            litterTrip.update(litterTrip)
+        }
+    }
 }
 
 struct LitterTripDetailView_Previews: PreviewProvider {

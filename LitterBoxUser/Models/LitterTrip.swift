@@ -57,4 +57,17 @@ struct LitterTrip : Codable, Identifiable {
             self.timestamp = timestamp
     }
 
+
+    func update(_ litterTrip: LitterTrip) {
+        let db = Firestore.firestore()
+        if let litterTripID = litterTrip.id {
+            do {
+                try db.collection("litterTrips").document(litterTripID).setData(from: litterTrip)
+            }
+            catch {
+                print("There was an error while trying to update a litter trip \(error.localizedDescription).")
+            }
+        }
+    }
+
 }
