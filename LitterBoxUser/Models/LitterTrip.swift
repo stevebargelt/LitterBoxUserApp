@@ -69,5 +69,16 @@ struct LitterTrip : Codable, Identifiable {
             }
         }
     }
+    
+    func delete(_ litterTrip: LitterTrip) {
+        let db = Firestore.firestore()
+        if let litterTripID = litterTrip.id {
+            db.collection("litterTrips").document(litterTripID).delete { (error) in
+                if let error = error {
+                    print("Error removing litter trip document: \(error.localizedDescription)")
+                }
+            }
+        }
+    }
 
 }

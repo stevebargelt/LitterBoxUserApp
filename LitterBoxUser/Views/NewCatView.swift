@@ -11,7 +11,7 @@ import SwiftUI
 struct NewCatView: View {
     
     @State private var newCat = Cat()
-    @ObservedObject var session = FirebaseSession()
+    @ObservedObject var catsVM = CatsViewModel()
     @Environment(\.presentationMode) var presentationMode
         
     var body: some View {
@@ -44,7 +44,7 @@ struct NewCatView: View {
     
     
     func addCat() {
-        session.addCat(newCat)
+        catsVM.addCat(newCat)
         dismiss()
     }
     

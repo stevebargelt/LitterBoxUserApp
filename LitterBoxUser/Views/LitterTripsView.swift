@@ -9,10 +9,11 @@
 import SwiftUI
 import FirebaseFirestore
 
+
 struct LitterTripsView: View {
     
-     @State var litterTrips: [LitterTrip] = []
-    
+    @State var litterTrips: [LitterTrip] = []
+
     let db = Firestore.firestore()
     var cat: Cat
     
@@ -31,8 +32,9 @@ struct LitterTripsView: View {
                                     Text(litterTrip.formattedDirectionProbability)
                                 }
                             }
-                        }
+                        }.onDelete(perform: delete)
                     }
+                    
                 }
             }
             .navigationBarTitle(Text("Litter Trips"), displayMode: .inline)
@@ -60,8 +62,12 @@ struct LitterTripsView: View {
             }
           }
         }
-      }
-        
+    }
+    
+    func delete(at offsets: IndexSet){
+        litterTrips.remove(atOffsets: offsets)
+    }
+    
 }
 
 struct LitterTripsView_Previews: PreviewProvider {

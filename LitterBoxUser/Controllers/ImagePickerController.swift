@@ -14,7 +14,7 @@ struct imagePicker: UIViewControllerRepresentable {
     
     @Binding var shown: Bool
     @Binding var cat:Cat
-    @ObservedObject var session = FirebaseSession()
+    @ObservedObject var catsVM = CatsViewModel()
     
     func makeCoordinator() -> imagePicker.Coordinator {
         return imagePicker.Coordinator(parent: self)
@@ -68,7 +68,7 @@ struct imagePicker: UIViewControllerRepresentable {
                 print("Download success")
                 print("\(url!)")
                 self.parent.cat.photo = "\(url!)"
-                self.parent.session.updateCat(self.parent.cat)
+                self.parent.catsVM.updateCat(self.parent.cat)
                 self.parent.shown.toggle()
                 self.listOfImageFile()
             }

@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		0399CBD1243E08DA009BD907 /* RootTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0399CBD0243E08DA009BD907 /* RootTabView.swift */; };
 		0399CBD3243E0AC1009BD907 /* LitterTripsAllCats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0399CBD2243E0AC1009BD907 /* LitterTripsAllCats.swift */; };
+		03C878DC2445EE2D003DCD2C /* LitterTripsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C878DB2445EE2D003DCD2C /* LitterTripsViewModel.swift */; };
+		03C878DE2445EEB9003DCD2C /* CatsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C878DD2445EEB9003DCD2C /* CatsViewModel.swift */; };
 		03CE9326242F8CB60025A1EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CE9325242F8CB60025A1EB /* AppDelegate.swift */; };
 		03CE9328242F8CB60025A1EB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CE9327242F8CB60025A1EB /* SceneDelegate.swift */; };
 		03CE932A242F8CB60025A1EB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CE9329242F8CB60025A1EB /* ContentView.swift */; };
@@ -51,6 +53,8 @@
 /* Begin PBXFileReference section */
 		0399CBD0243E08DA009BD907 /* RootTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabView.swift; sourceTree = "<group>"; };
 		0399CBD2243E0AC1009BD907 /* LitterTripsAllCats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LitterTripsAllCats.swift; sourceTree = "<group>"; };
+		03C878DB2445EE2D003DCD2C /* LitterTripsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LitterTripsViewModel.swift; sourceTree = "<group>"; };
+		03C878DD2445EEB9003DCD2C /* CatsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatsViewModel.swift; sourceTree = "<group>"; };
 		03CE9322242F8CB60025A1EB /* LitterBoxUser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LitterBoxUser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03CE9325242F8CB60025A1EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03CE9327242F8CB60025A1EB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -105,6 +109,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		03C878DA2445EE03003DCD2C /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				03C878DB2445EE2D003DCD2C /* LitterTripsViewModel.swift */,
+				03C878DD2445EEB9003DCD2C /* CatsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		03CE9319242F8CB60025A1EB = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +145,7 @@
 				03CE936A242F9DDC0025A1EB /* Controllers */,
 				03CE9365242F9D860025A1EB /* Components */,
 				03CE9354242F9BF10025A1EB /* Views */,
+				03C878DA2445EE03003DCD2C /* ViewModels */,
 				03CE9351242F9BB00025A1EB /* Models */,
 				03CE9339242F924F0025A1EB /* App */,
 				03CE932B242F8CB70025A1EB /* Assets.xcassets */,
@@ -411,6 +425,7 @@
 			files = (
 				03CE9373242F9E4D0025A1EB /* LitterTrip.swift in Sources */,
 				03CE935A242F9CAB0025A1EB /* SignUp.swift in Sources */,
+				03C878DC2445EE2D003DCD2C /* LitterTripsViewModel.swift in Sources */,
 				03CE9360242F9D1E0025A1EB /* LitterTripsView.swift in Sources */,
 				03CE935E242F9CE10025A1EB /* CatRowView.swift in Sources */,
 				03CE9353242F9BC00025A1EB /* User.swift in Sources */,
@@ -421,6 +436,7 @@
 				0399CBD1243E08DA009BD907 /* RootTabView.swift in Sources */,
 				03CE9364242F9D6E0025A1EB /* FirebaseImageView.swift in Sources */,
 				03CE936C242F9DEE0025A1EB /* ImagePickerController.swift in Sources */,
+				03C878DE2445EEB9003DCD2C /* CatsViewModel.swift in Sources */,
 				03CE9326242F8CB60025A1EB /* AppDelegate.swift in Sources */,
 				03CE9362242F9D420025A1EB /* LitterTripDetailView.swift in Sources */,
 				03CE9367242F9D9A0025A1EB /* CustomInput.swift in Sources */,

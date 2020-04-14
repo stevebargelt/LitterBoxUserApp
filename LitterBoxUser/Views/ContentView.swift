@@ -11,6 +11,7 @@ import SwiftUI
 struct ContentView: View {
     
     @ObservedObject var session = FirebaseSession()
+    @ObservedObject var catsVM = CatsViewModel()
     
     @State var showingProfile = false
     
@@ -33,7 +34,7 @@ struct ContentView: View {
                         }
                         
                         List {
-                            ForEach(self.session.cats) { cat in
+                            ForEach(self.catsVM.cats) { cat in
                                 NavigationLink(destination: CatDetailView(cat: cat)) {
                                     CatRowView(cat: cat)
                                 }
@@ -48,6 +49,9 @@ struct ContentView: View {
                                 )
                                 .padding()
                         }
+                    }
+                    .onAppear {
+                        self.catsVM.getCats()
                     }
                 } else {
                     LoginView()
@@ -71,7 +75,10 @@ struct ContentView: View {
     }
     
     func delete(at offsets: IndexSet){
-        session.cats.remove(atOffsets: offsets)
+        for index in offsets {
+            let cat = catsVM.cats[index]
+            catsVM.remove(cat)
+        }
     }
 }
 

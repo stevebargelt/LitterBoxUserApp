@@ -11,7 +11,9 @@ import FirebaseFirestore
 
 struct LitterTripsAllCatsView: View {
     
-     @State var litterTrips: [LitterTrip] = []
+   // @State var litterTrips: [LitterTrip] = []
+    
+    @ObservedObject var litterTripsVM = LitterTripsViewModel()
     
     let db = Firestore.firestore()
     
@@ -20,17 +22,15 @@ struct LitterTripsAllCatsView: View {
             Group {
                 VStack {
                     List {
-                        ForEach(self.litterTrips) { litterTrip in
+                        ForEach(self.litterTripsVM.litterTrips) { litterTrip in
                             NavigationLink(destination: LitterTripDetailView(litterTrip: litterTrip)) {
                                 HStack {
                                     Text(litterTrip.CatName)
                                     Text(litterTrip.formattedTimestamp)
-                                    //Text(litterTrip.formattedProbability)
                                     Text(litterTrip.Direction)
-                                    //Text(litterTrip.formattedDirectionProbability)
                                 }
                             }
-                        }
+                        }.onDelete(perform: delete)
                     }
                 }
             }
@@ -38,29 +38,16 @@ struct LitterTripsAllCatsView: View {
             .padding()
         }
         .onAppear {
-            self.getLitterTrips()
+            self.litterTripsVM.getLitterTrips()
         }
     }
-    
-    
-    func getLitterTrips() {
-        // Remove previously data to prevent duplicate data
-        self.litterTrips.removeAll()
-        self.db.collection("litterTrips")
-            .order(by: "timestamp", descending: true)
-            .limit(to: 25)
-            .addSnapshotListener { (querySnapshot, err) in
-                if let err = err {
-                    print("Error getting documents \(err)")
-                }
-                if let querySnapshot = querySnapshot {
-                    self.litterTrips = querySnapshot.documents.compactMap { document -> LitterTrip? in
-                        try? document.data(as: LitterTrip.self)
-            }
-          }
+        
+    func delete(at offsets: IndexSet){
+        for index in offsets {
+            let litterTrip = litterTripsVM.litterTrips[index]
+            litterTripsVM.remove(litterTrip)
         }
-      }
-    
+    }
         
 }
 
