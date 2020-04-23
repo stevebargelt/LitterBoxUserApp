@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import Firebase
 
 struct ContentView: View {
     
@@ -72,6 +73,9 @@ struct ContentView: View {
             session.logOut()
         }
         session.listen()
+        Messaging.messaging().subscribe(toTopic: "littertrips") { error in
+          print("Subscribed to littertrips topic")
+        }
     }
     
     func delete(at offsets: IndexSet){

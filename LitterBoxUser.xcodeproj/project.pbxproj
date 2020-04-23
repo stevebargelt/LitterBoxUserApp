@@ -51,6 +51,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0342A0352450E31D00C0C8F0 /* LitterBoxUserRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LitterBoxUserRelease.entitlements; sourceTree = "<group>"; };
 		0399CBD0243E08DA009BD907 /* RootTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabView.swift; sourceTree = "<group>"; };
 		0399CBD2243E0AC1009BD907 /* LitterTripsAllCats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LitterTripsAllCats.swift; sourceTree = "<group>"; };
 		03C878DB2445EE2D003DCD2C /* LitterTripsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LitterTripsViewModel.swift; sourceTree = "<group>"; };
@@ -141,6 +142,7 @@
 		03CE9324242F8CB60025A1EB /* LitterBoxUser */ = {
 			isa = PBXGroup;
 			children = (
+				0342A0352450E31D00C0C8F0 /* LitterBoxUserRelease.entitlements */,
 				03CE936D242F9E080025A1EB /* Session */,
 				03CE936A242F9DDC0025A1EB /* Controllers */,
 				03CE9365242F9D860025A1EB /* Components */,
@@ -622,6 +624,7 @@
 			baseConfigurationReference = A3CBD3E645A215AB905FAE39 /* Pods-LitterBoxUser.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LitterBoxUser/LitterBoxUserRelease.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_ASSET_PATHS = "\"LitterBoxUser/Preview Content\"";

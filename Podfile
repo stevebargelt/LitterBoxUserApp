@@ -15,5 +15,6 @@ target 'LitterBoxUser' do
   pod 'Firebase/Storage'
   pod 'FirebaseFirestoreSwift'
   pod 'Firebase/Crashlytics'
+  pod 'Firebase/Messaging'
   
 end
