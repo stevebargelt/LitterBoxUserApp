@@ -22,7 +22,7 @@ struct RootTabView: View {
                             Image(systemName: "tray.and.arrow.down")
                             Text("Litter Trips")
                         }
-                    ContentView()
+                    CatsView()
                         .tabItem{
                             Image(systemName: "person")
                             Text("Cats")

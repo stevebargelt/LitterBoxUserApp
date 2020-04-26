@@ -9,7 +9,7 @@
 import SwiftUI
 import Firebase
 
-struct ContentView: View {
+struct CatsView: View {
     
     @ObservedObject var catsVM = CatsViewModel()
     
@@ -51,7 +51,7 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        CatsView()
     }
 }
 

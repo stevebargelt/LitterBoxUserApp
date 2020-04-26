@@ -72,7 +72,7 @@ struct LitterTripsAllCatsView: View {
 
 struct LitterTripsAlLCatsView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        CatsView()
     }
 }
 
