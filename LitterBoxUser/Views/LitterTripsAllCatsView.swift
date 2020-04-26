@@ -39,7 +39,7 @@ struct LitterTripsAllCatsView: View {
             self.litterTripsVM.getLitterTrips()
         }
     }
-    
+
     func delete(at offsets: IndexSet){
         for index in offsets {
             let litterTrip = litterTripsVM.litterTrips[index]

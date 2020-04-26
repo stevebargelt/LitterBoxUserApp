@@ -18,13 +18,22 @@ struct LitterTripDetailView: View {
         
         HStack(alignment: .center, spacing: 20) {
             VStack {
+                HStack {
+                    Text("Cat: \(litterTrip.CatName)")
+                    Button(action: {
+                        self.catButtonPressed()
+                    }) {
+                        Image(systemName: "pencil").imageScale(.medium)
+                    }
+
+                }
                 Text("When: \(litterTrip.formattedTimestamp)")
                 Text("Probability \(litterTrip.formattedProbability)")
                 Spacer()
                 HStack {
                     Text("Direction \(litterTrip.Direction)")
                     Button(action: {
-                        self.buttonPressed()
+                        self.inOutButtonPressed()
                     }) {
                         if litterTrip.Direction == "in" {
                             Image(systemName: "tray.and.arrow.down.fill").imageScale(.medium)
@@ -56,7 +65,7 @@ struct LitterTripDetailView: View {
     }
     
 
-    func buttonPressed() {
+    func inOutButtonPressed() {
         if litterTrip.Direction == "in" {
             litterTrip.Direction = "out"
             litterTrip.update(litterTrip)
@@ -65,6 +74,11 @@ struct LitterTripDetailView: View {
             litterTrip.update(litterTrip)
         }
     }
+    
+    func catButtonPressed() {
+        print("Change cat here!")
+    }
+    
 }
 
 struct LitterTripDetailView_Previews: PreviewProvider {

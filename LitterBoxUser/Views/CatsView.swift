@@ -34,7 +34,6 @@ struct CatsView: View {
                         self.catsVM.getCats()
                     }
             }
-//            .navigationBarHidden(true)
             .navigationBarTitle(Text("Cats"))
             .padding()
         }
