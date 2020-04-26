@@ -7,22 +7,54 @@
 //
 
 import SwiftUI
+import Firebase
 
 struct RootTabView: View {
+    
+    @ObservedObject var session = FirebaseSession()
+    
     var body: some View {
-        TabView{
-            ContentView()
-                .tabItem{
-                    Image(systemName: "person")
-                    Text("Cats")
+        Group {
+            if session.session != nil {
+                TabView{
+                    LitterTripsAllCatsView()
+                        .tabItem{
+                            Image(systemName: "tray.and.arrow.down")
+                            Text("Litter Trips")
+                        }
+                    ContentView()
+                        .tabItem{
+                            Image(systemName: "person")
+                            Text("Cats")
+                        }
+                    SettingsView()
+                        .tabItem{
+                            Image(systemName: "person.crop.circle")
+                            Text("Settings")
+                        }
                 }
-            LitterTripsAllCatsView()
-                .tabItem{
-                    Image(systemName: "tray.and.arrow.down")
-                    Text("Litter Trips")
+            }
+            else {
+                LoginView()
+                .navigationBarItems(trailing: Text(""))
             }
         }
+        .onAppear {
+            self.getUser()
+        }
     }
+
+    func getUser() {
+        if ProcessInfo.processInfo.arguments.contains("--uitesting") {
+            // if we are running UI tests logout to get fresh session
+            session.logOut()
+        }
+        session.listen()
+        Messaging.messaging().subscribe(toTopic: "littertrips") { error in
+          print("Subscribed to littertrips topic")
+        }
+    }
+    
 }
 
 struct RootTabView_Previews: PreviewProvider {
@@ -30,4 +62,5 @@ struct RootTabView_Previews: PreviewProvider {
         RootTabView()
     }
 }
+
 

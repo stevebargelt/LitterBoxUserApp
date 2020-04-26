@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0399CBD1243E08DA009BD907 /* RootTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0399CBD0243E08DA009BD907 /* RootTabView.swift */; };
-		0399CBD3243E0AC1009BD907 /* LitterTripsAllCats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0399CBD2243E0AC1009BD907 /* LitterTripsAllCats.swift */; };
+		0399CBD3243E0AC1009BD907 /* LitterTripsAllCatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0399CBD2243E0AC1009BD907 /* LitterTripsAllCatsView.swift */; };
 		03C878DC2445EE2D003DCD2C /* LitterTripsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C878DB2445EE2D003DCD2C /* LitterTripsViewModel.swift */; };
 		03C878DE2445EEB9003DCD2C /* CatsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C878DD2445EEB9003DCD2C /* CatsViewModel.swift */; };
 		03CE9326242F8CB60025A1EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CE9325242F8CB60025A1EB /* AppDelegate.swift */; };
@@ -37,6 +37,7 @@
 		03CE9385243222EB0025A1EB /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CE9384243222EB0025A1EB /* SnapshotHelper.swift */; };
 		03CE938724322CA90025A1EB /* Just Testing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CE938624322CA90025A1EB /* Just Testing.swift */; };
 		03CE93FB24325C200025A1EB /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 03CE93FA24325C200025A1EB /* Podfile */; };
+		03DF1D422455BCE9005D3B90 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DF1D412455BCE9005D3B90 /* SettingsView.swift */; };
 		CCDF095F90250E7DDAF2F00A /* Pods_LitterBoxUser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ABB787F4B97B34236ADF7A9 /* Pods_LitterBoxUser.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,7 +54,7 @@
 /* Begin PBXFileReference section */
 		0342A0352450E31D00C0C8F0 /* LitterBoxUserRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LitterBoxUserRelease.entitlements; sourceTree = "<group>"; };
 		0399CBD0243E08DA009BD907 /* RootTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabView.swift; sourceTree = "<group>"; };
-		0399CBD2243E0AC1009BD907 /* LitterTripsAllCats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LitterTripsAllCats.swift; sourceTree = "<group>"; };
+		0399CBD2243E0AC1009BD907 /* LitterTripsAllCatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LitterTripsAllCatsView.swift; sourceTree = "<group>"; };
 		03C878DB2445EE2D003DCD2C /* LitterTripsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LitterTripsViewModel.swift; sourceTree = "<group>"; };
 		03C878DD2445EEB9003DCD2C /* CatsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatsViewModel.swift; sourceTree = "<group>"; };
 		03CE9322242F8CB60025A1EB /* LitterBoxUser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LitterBoxUser.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -86,6 +87,7 @@
 		03CE9384243222EB0025A1EB /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapshotHelper.swift; path = fastlane/SnapshotHelper.swift; sourceTree = SOURCE_ROOT; };
 		03CE938624322CA90025A1EB /* Just Testing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Just Testing.swift"; sourceTree = "<group>"; };
 		03CE93FA24325C200025A1EB /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		03DF1D412455BCE9005D3B90 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		3DF5F38E39499B57101B2D8F /* Pods-LitterBoxUser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LitterBoxUser.debug.xcconfig"; path = "Target Support Files/Pods-LitterBoxUser/Pods-LitterBoxUser.debug.xcconfig"; sourceTree = "<group>"; };
 		6ABB787F4B97B34236ADF7A9 /* Pods_LitterBoxUser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LitterBoxUser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3CBD3E645A215AB905FAE39 /* Pods-LitterBoxUser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LitterBoxUser.release.xcconfig"; path = "Target Support Files/Pods-LitterBoxUser/Pods-LitterBoxUser.release.xcconfig"; sourceTree = "<group>"; };
@@ -210,7 +212,8 @@
 				03CE9361242F9D420025A1EB /* LitterTripDetailView.swift */,
 				03CE9363242F9D6E0025A1EB /* FirebaseImageView.swift */,
 				0399CBD0243E08DA009BD907 /* RootTabView.swift */,
-				0399CBD2243E0AC1009BD907 /* LitterTripsAllCats.swift */,
+				0399CBD2243E0AC1009BD907 /* LitterTripsAllCatsView.swift */,
+				03DF1D412455BCE9005D3B90 /* SettingsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -426,12 +429,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				03CE9373242F9E4D0025A1EB /* LitterTrip.swift in Sources */,
+				03DF1D422455BCE9005D3B90 /* SettingsView.swift in Sources */,
 				03CE935A242F9CAB0025A1EB /* SignUp.swift in Sources */,
 				03C878DC2445EE2D003DCD2C /* LitterTripsViewModel.swift in Sources */,
 				03CE9360242F9D1E0025A1EB /* LitterTripsView.swift in Sources */,
 				03CE935E242F9CE10025A1EB /* CatRowView.swift in Sources */,
 				03CE9353242F9BC00025A1EB /* User.swift in Sources */,
-				0399CBD3243E0AC1009BD907 /* LitterTripsAllCats.swift in Sources */,
+				0399CBD3243E0AC1009BD907 /* LitterTripsAllCatsView.swift in Sources */,
 				03CE9369242F9DB70025A1EB /* CustomButton.swift in Sources */,
 				03CE936F242F9E1B0025A1EB /* FirebaseSession.swift in Sources */,
 				03CE9356242F9C3F0025A1EB /* CatDetailView.swift in Sources */,
