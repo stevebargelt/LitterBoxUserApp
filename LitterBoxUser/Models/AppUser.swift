@@ -8,8 +8,9 @@
 
 import Foundation
 
-class User {
-    
+// Note that User was getting confusing since FIRUser is now User
+class AppUser : Codable, Identifiable  {
+
     var uid: String
     var email: String?
     var displayName: String?

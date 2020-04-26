@@ -19,7 +19,7 @@
 		03CE9332242F8CB70025A1EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03CE9330242F8CB70025A1EB /* LaunchScreen.storyboard */; };
 		03CE9343242F99650025A1EB /* LitterBoxUserUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CE9342242F99650025A1EB /* LitterBoxUserUITests.swift */; };
 		03CE934B242F9A500025A1EB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 03CE934A242F9A500025A1EB /* GoogleService-Info.plist */; };
-		03CE9353242F9BC00025A1EB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CE9352242F9BC00025A1EB /* User.swift */; };
+		03CE9353242F9BC00025A1EB /* AppUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CE9352242F9BC00025A1EB /* AppUser.swift */; };
 		03CE9356242F9C3F0025A1EB /* CatDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CE9355242F9C3F0025A1EB /* CatDetailView.swift */; };
 		03CE9358242F9C850025A1EB /* NewCatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CE9357242F9C850025A1EB /* NewCatView.swift */; };
 		03CE935A242F9CAB0025A1EB /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CE9359242F9CAB0025A1EB /* SignUp.swift */; };
@@ -69,7 +69,7 @@
 		03CE9342242F99650025A1EB /* LitterBoxUserUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LitterBoxUserUITests.swift; sourceTree = "<group>"; };
 		03CE9344242F99650025A1EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03CE934A242F9A500025A1EB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		03CE9352242F9BC00025A1EB /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		03CE9352242F9BC00025A1EB /* AppUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUser.swift; sourceTree = "<group>"; };
 		03CE9355242F9C3F0025A1EB /* CatDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatDetailView.swift; sourceTree = "<group>"; };
 		03CE9357242F9C850025A1EB /* NewCatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCatView.swift; sourceTree = "<group>"; };
 		03CE9359242F9CAB0025A1EB /* SignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
@@ -192,7 +192,7 @@
 		03CE9351242F9BB00025A1EB /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				03CE9352242F9BC00025A1EB /* User.swift */,
+				03CE9352242F9BC00025A1EB /* AppUser.swift */,
 				03CE9370242F9E320025A1EB /* Cat.swift */,
 				03CE9372242F9E4D0025A1EB /* LitterTrip.swift */,
 			);
@@ -434,7 +434,7 @@
 				03C878DC2445EE2D003DCD2C /* LitterTripsViewModel.swift in Sources */,
 				03CE9360242F9D1E0025A1EB /* LitterTripsView.swift in Sources */,
 				03CE935E242F9CE10025A1EB /* CatRowView.swift in Sources */,
-				03CE9353242F9BC00025A1EB /* User.swift in Sources */,
+				03CE9353242F9BC00025A1EB /* AppUser.swift in Sources */,
 				0399CBD3243E0AC1009BD907 /* LitterTripsAllCatsView.swift in Sources */,
 				03CE9369242F9DB70025A1EB /* CustomButton.swift in Sources */,
 				03CE936F242F9E1B0025A1EB /* FirebaseSession.swift in Sources */,

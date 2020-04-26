@@ -11,11 +11,11 @@ import Firebase
 
 struct RootTabView: View {
     
-    @ObservedObject var session = FirebaseSession()
+    @EnvironmentObject var session: FirebaseSession
     
     var body: some View {
         Group {
-            if session.session != nil {
+            if session.appUser != nil {
                 TabView{
                     LitterTripsAllCatsView()
                         .tabItem{

@@ -7,19 +7,31 @@
 //
 
 import SwiftUI
+import FirebaseAuth
 
 struct SettingsView: View {
     
-    @ObservedObject var session = FirebaseSession()
+    @EnvironmentObject var session: FirebaseSession
     
     var body: some View {
-                
-            CustomButton(
-                label: "Sign Out",
-                action: self.session.logOut
-                )
-                .padding()
             
+        VStack {
+//            Text("DisplayName \((self.session.session?.displayName)!)")
+            Text("AppUser Email \(self.session.appUser?.email ?? "no email")")
+            Text("Email \(self.session.user?.email ?? "no email")")
+            Text("AppUser displayName \(self.session.appUser?.displayName ?? "no displayName")")
+            Text("displayName \(self.session.user?.displayName ?? "no displayName")")
+            if self.session.isLoggedIn! {
+             Text("isLoggedIn True")
+            } else {
+             Text("isLoggedIn False")
+            }
+            CustomButton(
+                    label: "Sign Out",
+                    action: self.session.logOut
+                    )
+                .padding()
+        }
     }
 }
 

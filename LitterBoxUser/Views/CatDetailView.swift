@@ -10,7 +10,6 @@ import SwiftUI
 
 struct CatDetailView: View {
     
-    @ObservedObject var session = FirebaseSession()
     @State var complete = false
     @State var uploadPresented = false
     @State var cat: Cat
